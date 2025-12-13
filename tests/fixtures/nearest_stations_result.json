@@ -1,0 +1,549 @@
+{
+    "pagination": {
+        "total": 27,
+        "limit": 100,
+        "offset": 0
+    },
+    "stations": [
+        {
+            "type": "station",
+            "title": "\u041f\u0430\u0432\u043b\u043e\u0432\u0441\u043a, \u0442\u0440\u0430\u0441\u0441\u0430",
+            "short_title": null,
+            "popular_title": null,
+            "code": "s9875656",
+            "lat": 50.4580289324,
+            "lng": 40.1710833337,
+            "station_type": "bus_stop",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u0430\u044f \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430",
+            "transport_type": "bus",
+            "distance": 22.55121827105171,
+            "majority": 3,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9875656/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9875656/schedule"
+                }
+            }
+        },
+        {
+            "type": "station",
+            "title": "\u041b\u043e\u0437\u043e\u0432\u043e\u0435, \u043f\u043e\u0432\u043e\u0440\u043e\u0442",
+            "short_title": null,
+            "popular_title": null,
+            "code": "s9761911",
+            "lat": 50.2652506891538,
+            "lng": 40.3023030236359,
+            "station_type": "bus_stop",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u0430\u044f \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430",
+            "transport_type": "bus",
+            "distance": 23.496940403793747,
+            "majority": 4,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9761911/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9761911/schedule"
+                }
+            }
+        },
+        {
+            "type": "station",
+            "title": "\u041f\u0430\u0432\u043b\u043e\u0432\u0441\u043a, \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430 \"\u0410\u0432\u0442\u043e\u0441\u0442\u0430\u043d\u0446\u0438\u044f\"",
+            "short_title": null,
+            "popular_title": null,
+            "code": "s9879079",
+            "lat": 50.45253417653615,
+            "lng": 40.140019566723545,
+            "station_type": "bus_stop",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u0430\u044f \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430",
+            "transport_type": "bus",
+            "distance": 24.70293790654877,
+            "majority": 3,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9879079/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9879079/schedule"
+                }
+            }
+        },
+        {
+            "type": "station",
+            "title": "\u041f\u0430\u0432\u043b\u043e\u0432\u0441\u043a, \u0430\u0432\u0442\u043e\u0441\u0442\u0430\u043d\u0446\u0438\u044f",
+            "short_title": null,
+            "popular_title": null,
+            "code": "s9868386",
+            "lat": 50.451835,
+            "lng": 40.139736,
+            "station_type": "",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0441\u0442\u0430\u043d\u0446\u0438\u044f",
+            "transport_type": "bus",
+            "distance": 24.718925748603752,
+            "majority": 2,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9868386/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9868386/schedule"
+                }
+            }
+        },
+        {
+            "type": "station",
+            "title": "\u041f\u0443\u0437\u0435\u0432\u043e",
+            "short_title": null,
+            "popular_title": null,
+            "code": "s9763588",
+            "lat": 50.67089346479356,
+            "lng": 40.388098172842504,
+            "station_type": "bus_stop",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u0430\u044f \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430",
+            "transport_type": "bus",
+            "distance": 26.633559431996407,
+            "majority": 4,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9763588/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9763588/schedule"
+                }
+            }
+        },
+        {
+            "type": "station",
+            "title": "\u0412\u0435\u0440\u0445\u043d\u0438\u0439 \u041c\u0430\u043c\u043e\u043d, \u0442\u0440\u0430\u0441\u0441\u0430",
+            "short_title": "",
+            "popular_title": "",
+            "code": "s9650570",
+            "lat": 50.184265670401,
+            "lng": 40.4145627275055,
+            "station_type": "bus_stop",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u0430\u044f \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430",
+            "transport_type": "bus",
+            "distance": 28.926765305525283,
+            "majority": 3,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9650570/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9650570/schedule"
+                }
+            }
+        },
+        {
+            "type": "station",
+            "title": "\u041a\u043b\u0435\u043f\u043e\u0432\u043a\u0430",
+            "short_title": null,
+            "popular_title": null,
+            "code": "s9763590",
+            "lat": 50.7039843878856,
+            "lng": 40.449631735682,
+            "station_type": "bus_stop",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u0430\u044f \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430",
+            "transport_type": "bus",
+            "distance": 29.48326981996818,
+            "majority": 4,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9763590/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9763590/schedule"
+                }
+            }
+        },
+        {
+            "type": "station",
+            "title": "\u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u043e\u0432\u043a\u0430-\u0414\u043e\u043d\u0441\u043a\u0430\u044f",
+            "short_title": null,
+            "popular_title": null,
+            "code": "s9763563",
+            "lat": 50.517061041085,
+            "lng": 40.0892060436296,
+            "station_type": "bus_stop",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u0430\u044f \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430",
+            "transport_type": "bus",
+            "distance": 29.514075995771982,
+            "majority": 4,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9763563/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9763563/schedule"
+                }
+            }
+        },
+        {
+            "type": "station",
+            "title": "\u0412\u0435\u0440\u0445\u043d\u0438\u0439 \u041c\u0430\u043c\u043e\u043d",
+            "short_title": "",
+            "popular_title": "",
+            "code": "s9637726",
+            "lat": 50.171253,
+            "lng": 40.406841,
+            "station_type": "",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0441\u0442\u0430\u043d\u0446\u0438\u044f",
+            "transport_type": "bus",
+            "distance": 30.450871236114725,
+            "majority": 3,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9637726/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9637726/schedule"
+                }
+            }
+        },
+        {
+            "type": "station",
+            "title": "\u041d\u0438\u0436\u043d\u0438\u0439 \u041c\u0430\u043c\u043e\u043d",
+            "short_title": null,
+            "popular_title": null,
+            "code": "s9763399",
+            "lat": 50.154923380179994,
+            "lng": 40.52458925818507,
+            "station_type": "bus_stop",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u0430\u044f \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430",
+            "transport_type": "bus",
+            "distance": 31.818129536975697,
+            "majority": 4,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9763399/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9763399/schedule"
+                }
+            }
+        },
+        {
+            "type": "station",
+            "title": "\u0413\u0432\u0430\u0437\u0434\u0430",
+            "short_title": null,
+            "popular_title": null,
+            "code": "s9763592",
+            "lat": 50.7353078023284,
+            "lng": 40.4835187643763,
+            "station_type": "bus_stop",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u0430\u044f \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430",
+            "transport_type": "bus",
+            "distance": 32.84255426399588,
+            "majority": 4,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9763592/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9763592/schedule"
+                }
+            }
+        },
+        {
+            "type": "station",
+            "title": "\u0411\u0435\u043b\u043e\u0433\u043e\u0440\u044c\u0435",
+            "short_title": null,
+            "popular_title": null,
+            "code": "s9806465",
+            "lat": 50.4941152360432,
+            "lng": 40.0136138122512,
+            "station_type": "bus_stop",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u0430\u044f \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430",
+            "transport_type": "bus",
+            "distance": 34.136163634283754,
+            "majority": 4,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9806465/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9806465/schedule"
+                }
+            }
+        },
+        {
+            "type": "station",
+            "title": "\u041f\u0435\u0440\u0432\u043e\u043c\u0430\u0439\u0441\u043a\u0438\u0439",
+            "short_title": null,
+            "popular_title": null,
+            "code": "s9888703",
+            "lat": 50.65096814622827,
+            "lng": 40.86600460671083,
+            "station_type": "bus_stop",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u0430\u044f \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430",
+            "transport_type": "bus",
+            "distance": 35.54295529728627,
+            "majority": 4,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9888703/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9888703/schedule"
+                }
+            }
+        },
+        {
+            "type": "station",
+            "title": "\u0421\u043e\u0432\u0445\u043e\u0437 \u0412\u043e\u0440\u043e\u0431\u044c\u0451\u0432\u0441\u043a\u0438\u0439",
+            "short_title": null,
+            "popular_title": null,
+            "code": "s9761926",
+            "lat": 50.68228399355273,
+            "lng": 40.820109508931196,
+            "station_type": "bus_stop",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u0430\u044f \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430",
+            "transport_type": "bus",
+            "distance": 35.71824529177485,
+            "majority": 4,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9761926/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9761926/schedule"
+                }
+            }
+        },
+        {
+            "type": "station",
+            "title": "\u0411\u0435\u043b\u043e\u0433\u043e\u0440\u044c\u0435, \u0442\u0440\u0430\u0441\u0441\u0430",
+            "short_title": null,
+            "popular_title": null,
+            "code": "s9871207",
+            "lat": 50.504607004091234,
+            "lng": 39.993235776011375,
+            "station_type": "bus_stop",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u0430\u044f \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430",
+            "transport_type": "bus",
+            "distance": 35.76927508282595,
+            "majority": 4,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9871207/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9871207/schedule"
+                }
+            }
+        },
+        {
+            "type": "station",
+            "title": "\u041c\u0430\u0441\u044b\u0447\u0435\u0432\u043e",
+            "short_title": null,
+            "popular_title": null,
+            "code": "s9761927",
+            "lat": 50.7302090123648,
+            "lng": 40.7438299991185,
+            "station_type": "bus_stop",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u0430\u044f \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430",
+            "transport_type": "bus",
+            "distance": 36.97840238702194,
+            "majority": 4,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9761927/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9761927/schedule"
+                }
+            }
+        },
+        {
+            "type": "station",
+            "title": "\u0414\u043c\u0438\u0442\u0440\u0438\u0435\u0432\u043a\u0430",
+            "short_title": null,
+            "popular_title": null,
+            "code": "s9763594",
+            "lat": 50.7805157322523,
+            "lng": 40.5245511978862,
+            "station_type": "bus_stop",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u0430\u044f \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430",
+            "transport_type": "bus",
+            "distance": 37.95581823889346,
+            "majority": 4,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9763594/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9763594/schedule"
+                }
+            }
+        },
+        {
+            "type": "station",
+            "title": "\u0412\u043e\u0440\u043e\u0431\u044c\u0435\u0432\u043a\u0430",
+            "short_title": null,
+            "popular_title": null,
+            "code": "s9761925",
+            "lat": 50.64739112123424,
+            "lng": 40.92331303279436,
+            "station_type": "",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0441\u0442\u0430\u043d\u0446\u0438\u044f",
+            "transport_type": "bus",
+            "distance": 38.43925657925521,
+            "majority": 3,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9761925/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9761925/schedule"
+                }
+            }
+        },
+        {
+            "type": "station",
+            "title": "\u041a\u0440\u0430\u0441\u043d\u044b\u0439",
+            "short_title": null,
+            "popular_title": null,
+            "code": "s9761928",
+            "lat": 50.7691911826086,
+            "lng": 40.664350278675,
+            "station_type": "bus_stop",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u0430\u044f \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430",
+            "transport_type": "bus",
+            "distance": 38.662879055693466,
+            "majority": 4,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9761928/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9761928/schedule"
+                }
+            }
+        },
+        {
+            "type": "station",
+            "title": "\u041b\u043e\u0441\u0435\u0432\u043e",
+            "short_title": null,
+            "popular_title": null,
+            "code": "s9761890",
+            "lat": 50.678597027737,
+            "lng": 40.0494553707529,
+            "station_type": "bus_stop",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u0430\u044f \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430",
+            "transport_type": "bus",
+            "distance": 40.80753388731475,
+            "majority": 3,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9761890/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9761890/schedule"
+                }
+            }
+        },
+        {
+            "type": "station",
+            "title": "\u0411\u0443\u0442\u0443\u0440\u043b\u0438\u043d\u043e\u0432\u043a\u0430, \u0430\u0432\u0442\u043e\u0441\u0442\u0430\u043d\u0446\u0438\u044f",
+            "short_title": null,
+            "popular_title": null,
+            "code": "s9637948",
+            "lat": 50.8271654991,
+            "lng": 40.5896036513,
+            "station_type": "",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0441\u0442\u0430\u043d\u0446\u0438\u044f",
+            "transport_type": "bus",
+            "distance": 43.64765871389874,
+            "majority": 1,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9637948/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9637948/schedule"
+                }
+            }
+        },
+        {
+            "type": "station",
+            "title": "\u0424\u0438\u043b\u043e\u043d\u043e\u0432\u043e",
+            "short_title": null,
+            "popular_title": null,
+            "code": "s9833244",
+            "lat": 50.040702884403,
+            "lng": 40.4720455668532,
+            "station_type": "bus_stop",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u0430\u044f \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430",
+            "transport_type": "bus",
+            "distance": 44.4323695733932,
+            "majority": 4,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9833244/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9833244/schedule"
+                }
+            }
+        },
+        {
+            "type": "station",
+            "title": "\u041a\u043e\u0437\u043b\u043e\u0432\u043a\u0430",
+            "short_title": null,
+            "popular_title": null,
+            "code": "s9761906",
+            "lat": 50.86011698596342,
+            "lng": 40.45645745467575,
+            "station_type": "bus_stop",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u0430\u044f \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430",
+            "transport_type": "bus",
+            "distance": 46.776642270263714,
+            "majority": 4,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9761906/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9761906/schedule"
+                }
+            }
+        },
+        {
+            "type": "station",
+            "title": "\u041b\u043e\u0441\u0435\u0432\u043e, \u043f\u043e\u0432\u043e\u0440\u043e\u0442 \u0441 \u0442\u0440\u0430\u0441\u0441\u044b \u041c4",
+            "short_title": null,
+            "popular_title": null,
+            "code": "s9875655",
+            "lat": 50.7593410439758,
+            "lng": 40.0340465662337,
+            "station_type": "bus_stop",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u0430\u044f \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430",
+            "transport_type": "bus",
+            "distance": 47.84786736340367,
+            "majority": 4,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9875655/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9875655/schedule"
+                }
+            }
+        },
+        {
+            "type": "station",
+            "title": "\u0421\u0435\u0440\u0433\u0435\u0435\u0432\u043a\u0430",
+            "short_title": null,
+            "popular_title": null,
+            "code": "s9806466",
+            "lat": 50.423367130429,
+            "lng": 39.8086805265398,
+            "station_type": "bus_stop",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u0430\u044f \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430",
+            "transport_type": "bus",
+            "distance": 48.18268806285147,
+            "majority": 4,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9806466/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9806466/schedule"
+                }
+            }
+        },
+        {
+            "type": "station",
+            "title": "\u041f\u0438\u0440\u0430\u043c\u0438\u0434\u044b",
+            "short_title": null,
+            "popular_title": null,
+            "code": "s9761907",
+            "lat": 50.85797743144833,
+            "lng": 40.29276374727203,
+            "station_type": "bus_stop",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u0430\u044f \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430",
+            "transport_type": "bus",
+            "distance": 48.48600640864161,
+            "majority": 4,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9761907/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9761907/schedule"
+                }
+            }
+        },
+        {
+            "type": "station",
+            "title": "\u0428\u0435\u0441\u0442\u0430\u043a\u043e\u0432\u043e",
+            "short_title": null,
+            "popular_title": null,
+            "code": "s9761910",
+            "lat": 50.7877774104858,
+            "lng": 40.0643352605385,
+            "station_type": "bus_stop",
+            "station_type_name": "\u0430\u0432\u0442\u043e\u0431\u0443\u0441\u043d\u0430\u044f \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430",
+            "transport_type": "bus",
+            "distance": 48.897561705009856,
+            "majority": 4,
+            "type_choices": {
+                "schedule": {
+                    "desktop_url": "https://rasp.yandex.ru/station/9761910/schedule",
+                    "touch_url": "https://t.rasp.yandex.ru/station/9761910/schedule"
+                }
+            }
+        }
+    ]
+}

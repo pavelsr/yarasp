@@ -1,0 +1,124 @@
+{
+    "number": "723\u0420",
+    "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041c\u043e\u0441\u043a\u0432\u0430",
+    "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041c\u043e\u0441\u043a\u0432\u0430",
+    "express_type": null,
+    "transport_type": "train",
+    "carrier": {
+        "code": 4240,
+        "title": "\u0420\u0416\u0414/\u0414\u041e\u0421\u0421",
+        "codes": {
+            "sirena": null,
+            "iata": null,
+            "icao": null
+        },
+        "offices": []
+    },
+    "uid": "723R_0_2",
+    "vehicle": null,
+    "transport_subtype": {
+        "title": "\u00ab\u041b\u0430\u0441\u0442\u043e\u0447\u043a\u0430\u00bb",
+        "code": "lastdal",
+        "color": "#CC6600"
+    },
+    "days": "13, 14, 15, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 1, 2, 3\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, \u2026",
+    "except_days": "",
+    "stops": [
+        {
+            "station": {
+                "type": "station",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 (\u041c\u043e\u0441\u043a\u043e\u0432\u0441\u043a\u0438\u0439 \u0432\u043e\u043a\u0437\u0430\u043b)",
+                "short_title": "\u0421\u041f\u0431-\u041c\u043e\u0441\u043a.",
+                "popular_title": "\u041c\u043e\u0441\u043a\u043e\u0432\u0441\u043a\u0438\u0439 \u0432\u043e\u043a\u0437\u0430\u043b",
+                "code": "s9602494",
+                "station_type": "train_station",
+                "station_type_name": "\u0432\u043e\u043a\u0437\u0430\u043b",
+                "transport_type": "train"
+            },
+            "departure": "2025-12-13 05:35:00",
+            "arrival": null,
+            "duration": 0.0,
+            "stop_time": null,
+            "platform": "",
+            "terminal": null
+        },
+        {
+            "station": {
+                "type": "station",
+                "title": "\u0411\u043e\u043b\u043e\u0433\u043e\u0435-\u041c\u043e\u0441\u043a\u043e\u0432\u0441\u043a\u043e\u0435",
+                "short_title": null,
+                "popular_title": null,
+                "code": "s9603153",
+                "station_type": "train_station",
+                "station_type_name": "\u0432\u043e\u043a\u0437\u0430\u043b",
+                "transport_type": "train"
+            },
+            "departure": "2025-12-13 07:56:00",
+            "arrival": "2025-12-13 07:55:00",
+            "duration": 8460.0,
+            "stop_time": 60,
+            "platform": "",
+            "terminal": null
+        },
+        {
+            "station": {
+                "type": "station",
+                "title": "\u0412\u044b\u0448\u043d\u0438\u0439 \u0412\u043e\u043b\u043e\u0447\u0451\u043a",
+                "short_title": "",
+                "popular_title": "",
+                "code": "s9602953",
+                "station_type": "train_station",
+                "station_type_name": "\u0432\u043e\u043a\u0437\u0430\u043b",
+                "transport_type": "train"
+            },
+            "departure": "2025-12-13 08:20:00",
+            "arrival": "2025-12-13 08:19:00",
+            "duration": 9900.0,
+            "stop_time": 60,
+            "platform": "",
+            "terminal": null
+        },
+        {
+            "station": {
+                "type": "station",
+                "title": "\u0422\u0432\u0435\u0440\u044c",
+                "short_title": null,
+                "popular_title": null,
+                "code": "s9603093",
+                "station_type": "station",
+                "station_type_name": "\u0441\u0442\u0430\u043d\u0446\u0438\u044f",
+                "transport_type": "train"
+            },
+            "departure": "2025-12-13 09:14:00",
+            "arrival": "2025-12-13 09:13:00",
+            "duration": 13140.0,
+            "stop_time": 60,
+            "platform": "",
+            "terminal": null
+        },
+        {
+            "station": {
+                "type": "station",
+                "title": "\u041c\u043e\u0441\u043a\u0432\u0430 (\u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u0438\u0439 \u0432\u043e\u043a\u0437\u0430\u043b)",
+                "short_title": "\u041c-\u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a",
+                "popular_title": "\u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u0438\u0439 \u0432\u043e\u043a\u0437\u0430\u043b",
+                "code": "s2006004",
+                "station_type": "train_station",
+                "station_type_name": "\u0432\u043e\u043a\u0437\u0430\u043b",
+                "transport_type": "train"
+            },
+            "departure": null,
+            "arrival": "2025-12-13 11:13:00",
+            "duration": 20280.0,
+            "stop_time": null,
+            "platform": "",
+            "terminal": null
+        }
+    ],
+    "from": null,
+    "to": null,
+    "start_date": "2025-12-13",
+    "arrival_date": null,
+    "departure_date": null,
+    "start_time": "05:35"
+}

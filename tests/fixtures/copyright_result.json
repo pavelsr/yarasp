@@ -1,0 +1,12 @@
+{
+    "copyright": {
+        "text": "\u0414\u0430\u043d\u043d\u044b\u0435 \u043f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u044b \u0441\u0435\u0440\u0432\u0438\u0441\u043e\u043c \u042f\u043d\u0434\u0435\u043a\u0441.\u0420\u0430\u0441\u043f\u0438\u0441\u0430\u043d\u0438\u044f",
+        "url": "http://rasp.yandex.ru/",
+        "logo_vy": "<iframe frameborder=\"0\" style=\"overflow: hidden; border: 0; width: 240px; height: 130px;\" src=\"//yandex.st/rasp/media/apicc/copyright_vert_yellow.html\"></iframe>",
+        "logo_vm": "<iframe frameborder=\"0\" style=\"overflow: hidden; border: 0; width: 240px; height: 130px;\" src=\"//yandex.st/rasp/media/apicc/copyright_vert_mono.html\"></iframe>",
+        "logo_vd": "<iframe frameborder=\"0\" style=\"overflow: hidden; border: 0; width: 240px; height: 130px;\" src=\"//yandex.st/rasp/media/apicc/copyright_vert_dark.html\"></iframe>",
+        "logo_hy": "<iframe frameborder=\"0\" style=\"overflow: hidden; border: 0; width: 740px; height: 51px;\" src=\"//yandex.st/rasp/media/apicc/copyright_horiz_yellow.html\"></iframe>",
+        "logo_hm": "<iframe frameborder=\"0\" style=\"overflow: hidden; border: 0; width: 740px; height: 51px;\" src=\"//yandex.st/rasp/media/apicc/copyright_horiz_mono.html\"></iframe>",
+        "logo_hd": "<iframe frameborder=\"0\" style=\"overflow: hidden; border: 0; width: 740px; height: 51px;\" src=\"//yandex.st/rasp/media/apicc/copyright_horiz_dark.html\"></iframe>"
+    }
+}
