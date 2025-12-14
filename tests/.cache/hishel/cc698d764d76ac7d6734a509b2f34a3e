@@ -1,0 +1,79 @@
+{
+    "response": {
+        "status": 200,
+        "headers": [
+            [
+                "Content-Type",
+                "application/json; charset=utf-8"
+            ],
+            [
+                "X-Content-Type-Options",
+                "nosniff"
+            ],
+            [
+                "Content-Length",
+                "763"
+            ],
+            [
+                "Allow",
+                "GET"
+            ],
+            [
+                "Vary",
+                "Accept, Accept-Encoding"
+            ],
+            [
+                "Date",
+                "Sun, 14 Dec 2025 18:51:45 GMT"
+            ],
+            [
+                "Content-Encoding",
+                "gzip"
+            ]
+        ],
+        "content": "H4sIAAAAAAAA/8VWy07bUBD9lcjdtJJDrx9xYm/5g24rZJnEEZYc27q2URFCClQqlVoJgVA3oBK66Kab8FIpiCzyBff+Al/S40dexqVRVMpiEnsed2bOnMzNpuDFnVWbCoZQlxXWE0QhciLXxjs7ZX12x274TpWdsCu+A+myM/4enxeV++5hhR2zAd9mN+yc9REYrvk0MhcOt98F1A5DM9oIEO/FrotaqOWFQXpsqk0UjgfnpkWpk5S9KTT9FiyqrJKp2nvsCzt8zQ7ZV9RxmgTAK0zcQ4fanjVK4FjR5Llp+dnzlij47bbTTCLeruAtdloZQm9MYso4bt1ec5puSZ1hvJqVujkuZviDHbE+3wYEA76LfvvD27wiWF0rjFqWmypcPxnEi+VlTSNEQN6WtYESBEkVK1INUofoYkUmEAkiQxQI7DLssgaBj9yAwE+BnyINe+ySXSV5AX+X7+EMmGERK+qwx/cwJUwgs9x3v6ejaNpBZObZk9FGfpBgAfgiK3J8L+0vG8lIMy9zXo7nPmDn6fc1+1VBCQM8/kTk7asyMp2ws+oocgkOgR/ErkUnLn87dQJ5qGtEVnU1bSwtfoZe5qSjabPpWZ000eyZf6BoMjw7sGgU00QpE7lWleSqpFZIzVBqBuYrCgmJ1zH7nEWtmObgkiWSgY72OmOWBa4VtX3ayWYS2bTjeKPoLXHO2eyj+lvIBeSq+gA1KIvo58ln8c6UU4AqUk15JkDrRk0rAFq054BPEG6oWhFkjfwjiA/4J/4RP4CUgQcZ3nyX77ObB8QuIXKBp/qzwdowZPIYrA1D0ouw6jp5Mli/oSMsEv55QYISvQTJxzFMlzZ2Gf/ArvneQijqhqQ+hiLsShFFSZHUJ4Nx6tbFLj7CzZAw9Y5dYDv32eW8G/m4Wh5btprnSzJFfJkQ3ID/cUFnbCmdkCSVTAj2xgJLekUU2tTvjP82+KMn9EGTCzeapc+ENbktvyhGhc9oszOyWoT0lhG2fgNc4EXH4AkAAA==",
+        "extensions": {
+            "http_version": "HTTP/1.1",
+            "reason_phrase": "OK"
+        }
+    },
+    "request": {
+        "method": "GET",
+        "url": "://URL(scheme=b'https', host=b'api.rasp.yandex.net', port=None, target=b'/v3.0/thread/?uid=723R_0_2",
+        "headers": [
+            [
+                "Host",
+                "api.rasp.yandex.net"
+            ],
+            [
+                "Accept",
+                "*/*"
+            ],
+            [
+                "Accept-Encoding",
+                "gzip, deflate"
+            ],
+            [
+                "Connection",
+                "keep-alive"
+            ],
+            [
+                "User-Agent",
+                "httpx"
+            ]
+        ],
+        "extensions": {
+            "timeout": {
+                "connect": 5.0,
+                "read": 5.0,
+                "write": 5.0,
+                "pool": 5.0
+            }
+        }
+    },
+    "metadata": {
+        "cache_key": "cc698d764d76ac7d6734a509b2f34a3e",
+        "number_of_uses": 30,
+        "created_at": "Sun, 14 Dec 2025 18:51:45 GMT"
+    }
+}

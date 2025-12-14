@@ -1,0 +1,79 @@
+{
+    "response": {
+        "status": 200,
+        "headers": [
+            [
+                "Vary",
+                "Accept, Accept-Encoding"
+            ],
+            [
+                "Content-Encoding",
+                "gzip"
+            ],
+            [
+                "X-Content-Type-Options",
+                "nosniff"
+            ],
+            [
+                "Date",
+                "Sun, 14 Dec 2025 18:51:56 GMT"
+            ],
+            [
+                "Content-Length",
+                "338"
+            ],
+            [
+                "Content-Type",
+                "application/json; charset=utf-8"
+            ],
+            [
+                "Allow",
+                "GET"
+            ]
+        ],
+        "content": "H4sIAAAAAAAA/82SXWoCMRDHrxLyXDbaDwqr9SQLst1EE7prlhg/tiJ0+9qHvvQAvUFFFKSteoXJjZxdi1CoLZR98CWZyX8y80v4T2ik08yorrTUn1ArxrhTeIEZrGHtnmBJYOseYAkL2LjcPaIwhw/MUSQuhyWKc1hhtIFPAm94bYHqu8s9eIUZnm9Ltei3cs/0jA5MjCOktanPmAn7qZeFPS7GnhkwlGPd1e1hhiVN1TFhIki53mrDhbkJaC2gpG+zWGCsh8J0Yj3yiVSci16D7Mt8UmuQkeJW+uT8spaOG0SK4o0+qV8UadHDRNiBsa/hfVuysERwFbIwVVHEDl/Txjm2nYkYZ3nSJnFAW022x2sdmJMTZE50Tx8n5idIzENzd5RYVueL6+/EV/V/AEtt1P1fvpDV+aI65l99IavzRXXEP/tiOt0BDntY6sIEAAA=",
+        "extensions": {
+            "http_version": "HTTP/1.1",
+            "reason_phrase": "OK"
+        }
+    },
+    "request": {
+        "method": "GET",
+        "url": "://URL(scheme=b'https', host=b'api.rasp.yandex.net', port=None, target=b'/v3.0/copyright/",
+        "headers": [
+            [
+                "Host",
+                "api.rasp.yandex.net"
+            ],
+            [
+                "Accept",
+                "*/*"
+            ],
+            [
+                "Accept-Encoding",
+                "gzip, deflate"
+            ],
+            [
+                "Connection",
+                "keep-alive"
+            ],
+            [
+                "User-Agent",
+                "httpx"
+            ]
+        ],
+        "extensions": {
+            "timeout": {
+                "connect": 5.0,
+                "read": 5.0,
+                "write": 5.0,
+                "pool": 5.0
+            }
+        }
+    },
+    "metadata": {
+        "cache_key": "1bba9cc23ec176e4737b2611f215ab4c",
+        "number_of_uses": 30,
+        "created_at": "Sun, 14 Dec 2025 18:51:56 GMT"
+    }
+}

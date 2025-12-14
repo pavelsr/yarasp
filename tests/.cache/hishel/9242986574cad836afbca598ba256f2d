@@ -1,0 +1,75 @@
+{
+    "response": {
+        "status": 200,
+        "headers": [
+            [
+                "Content-Length",
+                "193"
+            ],
+            [
+                "Date",
+                "Sun, 14 Dec 2025 18:51:45 GMT"
+            ],
+            [
+                "Content-Type",
+                "application/json; charset=utf-8"
+            ],
+            [
+                "Vary",
+                "Accept"
+            ],
+            [
+                "Allow",
+                "GET"
+            ],
+            [
+                "X-Content-Type-Options",
+                "nosniff"
+            ]
+        ],
+        "content": "eyJ0eXBlIjoic2V0dGxlbWVudCIsInRpdGxlIjoi0J/QsNCy0LvQvtCy0YHQuiIsInNob3J0X3RpdGxlIjoi0J/QsNCy0LvQvtCy0YHQuiIsInBvcHVsYXJfdGl0bGUiOiLQn9Cw0LLQu9C+0LLRgdC6IiwiY29kZSI6ImMxMDY4MCIsImxhdCI6NTAuNDQ5NzMsImxuZyI6NDAuMTI1MjgyLCJkaXN0YW5jZSI6MjUuNzIzODA1MDI0NDc5Njg4fQ==",
+        "extensions": {
+            "http_version": "HTTP/1.1",
+            "reason_phrase": "OK"
+        }
+    },
+    "request": {
+        "method": "GET",
+        "url": "://URL(scheme=b'https', host=b'api.rasp.yandex.net', port=None, target=b'/v3.0/nearest_settlement/?lat=50.440046&lng=40.4882367&distance=50",
+        "headers": [
+            [
+                "Host",
+                "api.rasp.yandex.net"
+            ],
+            [
+                "Accept",
+                "*/*"
+            ],
+            [
+                "Accept-Encoding",
+                "gzip, deflate"
+            ],
+            [
+                "Connection",
+                "keep-alive"
+            ],
+            [
+                "User-Agent",
+                "httpx"
+            ]
+        ],
+        "extensions": {
+            "timeout": {
+                "connect": 5.0,
+                "read": 5.0,
+                "write": 5.0,
+                "pool": 5.0
+            }
+        }
+    },
+    "metadata": {
+        "cache_key": "9242986574cad836afbca598ba256f2d",
+        "number_of_uses": 30,
+        "created_at": "Sun, 14 Dec 2025 18:51:45 GMT"
+    }
+}

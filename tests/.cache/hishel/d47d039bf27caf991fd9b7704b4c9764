@@ -1,0 +1,79 @@
+{
+    "response": {
+        "status": 200,
+        "headers": [
+            [
+                "Content-Length",
+                "1114"
+            ],
+            [
+                "Allow",
+                "GET"
+            ],
+            [
+                "X-Content-Type-Options",
+                "nosniff"
+            ],
+            [
+                "Content-Type",
+                "application/json; charset=utf-8"
+            ],
+            [
+                "Content-Encoding",
+                "gzip"
+            ],
+            [
+                "Date",
+                "Sun, 14 Dec 2025 18:51:41 GMT"
+            ],
+            [
+                "Vary",
+                "Accept, Accept-Encoding"
+            ]
+        ],
+        "content": "H4sIAAAAAAAA/+1YX2vcRhD/KkLg0lBLWq1Od5Zo2p6JC6UBQ0qfmiLW0t6dGv1jJdk5jOHqhD61uA/tU0uTUih9dBwHXDexIZ9g9RX6STq70sWy7xJqkhA/HOj0Z2Z3/uzM/Ga4bTWnhPkj1d1WByyNxbMYZ1R11bwgRZgm6rJahEUkKPxBdY//w4/5CT/gJ8DIRykrvCkbCFmalRFhbZKfBlKa00XI6nbFrlqw1+ghIctAzAWGl5BY6tyvfqgmoPGUn1STaleYw0iSZ1JzLSGLSELVHeCkr7b/L/4EZD3hT+G5W30Pb3P8SMoomvGkJrZ9wab1Vn0JSNHohY+cDmOaFLnqfgX+jRglgfA0KeMNymDXF18qHbvt6e98nz/jx9Wuxh8IZ6Xjj6p7cH+s/Dv5SeG/gg3fQiwP+P5MJC+93SeMhcKS7eaMcLdlzI+129V9SJ4T6bZYlIvVechoQmqVfwAjJAWR/oh3n0A81f6nN8V5kCBgNM/F0pbuZYX/AmF8xo/g9xi07PNDyTvifyv8tJrosOJQt3rwOBanzk91B2SXLAJJo6LIXMPY2trSCWXpIEoLnZUG8GlMwmiawElB/EJq/lPogtSZKEIhOCQkPoW4fgffR4q4HskIg0HyeSAP8qjac5UPesr7Hce+pmBsabYN17IiiSsIXVM6nU5N1JUPN9hHt9nthGrCCFfxSRT5EH3KPmlZKaptlCZNlUXpMG0cysGjMRH5pye0MHLLYCTPjJgGITEgq4jhp3FGkrEhNhlTkZ748lipD8NBI9DLN4eXFgp7jP5UpqkLERC9TToKfZkN/ZBtlLnStzAS53w3E1Ftsr+uspfURJuRlxs1b1udU6DT9yhlLyqoDAOZV1rH9rBtYtP2fNz1TCzkyoLyYlqM0sCLwuSOKOUs1IWP+pgkAb0r3d60jHqt8bEoz+sYYVszsWba74H86/Okg+oFrl4pXKUZYUXJqAekYpCyuD5PgWCbJLpAPVsN5ReHCRGgYLaWt8ir0rw0y5utJasPyrU7COlI2g4G1cCunuVOWw0wEHIxchE6UyKIpms3xICMhQYT4APj5w/5IRz3McAMAE+1J0vKp5lQI5eBy3M7xtq60rWRdZV6hum0msZndwib3yh+5r+dNYq19bNG8Xn/1rlGUefWOaTP6JDkg2isA1q1YH6ahS+A/k2Bq9Snf5MNXxdRl26gJWdF3Ff78o6WbphLK2gWX1dTGiZDpdfraRi9A4hdW9dEYnm4i0wEMAhRfX2U7WrI1FCNsi9RsADaBdDavflA26TPRaA1XWTPAC12O+eB1n7+sNoDZAPUuhTCwkyOnauEr4uZfDGTz5/JWz3DQmjt1jsZzLFTj87OmxzMnelgPiN90S8W/cI2XzWYOxf7hWgWM/2i62L7/GDu/I+h/GuAUoEewtLWnztAzsgQzK7tg9CmhVBj2iaUfxiHhepay2o6GOQUXtHOzn/R/2dRwRMAAA==",
+        "extensions": {
+            "http_version": "HTTP/1.1",
+            "reason_phrase": "OK"
+        }
+    },
+    "request": {
+        "method": "GET",
+        "url": "://URL(scheme=b'https', host=b'api.rasp.yandex.net', port=None, target=b'/v3.0/search/?from=s9600366&to=s9600213&limit=3&transport_types=plane",
+        "headers": [
+            [
+                "Host",
+                "api.rasp.yandex.net"
+            ],
+            [
+                "Accept",
+                "*/*"
+            ],
+            [
+                "Accept-Encoding",
+                "gzip, deflate"
+            ],
+            [
+                "Connection",
+                "keep-alive"
+            ],
+            [
+                "User-Agent",
+                "httpx"
+            ]
+        ],
+        "extensions": {
+            "timeout": {
+                "connect": 5.0,
+                "read": 5.0,
+                "write": 5.0,
+                "pool": 5.0
+            }
+        }
+    },
+    "metadata": {
+        "cache_key": "d47d039bf27caf991fd9b7704b4c9764",
+        "number_of_uses": 31,
+        "created_at": "Sun, 14 Dec 2025 18:51:41 GMT"
+    }
+}

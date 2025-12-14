@@ -149,6 +149,7 @@ cython_debug/
 
 # Cache files
 .cache/
+!tests/.cache/hishel
 *.sqlite
 *.sqlite3
 yarasp_counter.json

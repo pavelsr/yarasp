@@ -1,0 +1,79 @@
+{
+    "response": {
+        "status": 200,
+        "headers": [
+            [
+                "Date",
+                "Sun, 14 Dec 2025 18:51:45 GMT"
+            ],
+            [
+                "Vary",
+                "Accept, Accept-Encoding"
+            ],
+            [
+                "X-Content-Type-Options",
+                "nosniff"
+            ],
+            [
+                "Content-Length",
+                "373"
+            ],
+            [
+                "Allow",
+                "GET"
+            ],
+            [
+                "Content-Type",
+                "application/json; charset=utf-8"
+            ],
+            [
+                "Content-Encoding",
+                "gzip"
+            ]
+        ],
+        "content": "H4sIAAAAAAAA/01Ry0oDMRT9lZCVxWlS2qm1g4huXLkTV1YkzmTawHQyJCmllMJYxJ3oXjciuK5aodZHfyHzR95MFYSb5D5Ozj03GeOQKSW4wsEYhzLiOKhvedgIk4CL7W1xXeT2u7i0H7BPsVeCtENroXjKHOjBPkJBMOOio2Pnh0yCv39wiCceZlGkuNYOeg8sF3ZpX+zMQ/bOvtkvu4D1Cl1mdl7WFvYd2VWRE0DMSaMFxxKu5XZF2sA9UAkw9YzJAkqHwyFhXMk4kYaoAYU67zPhEKXW1LDQlJ2fXK9iWuTINYSBHOOnnRVXEC+Qs2c3qhNUniCx9G8CtNlCG367WUH1eqPabIJ5qExu12oV5Pv+OknQzrna7ahOyqtORIBCliQhTw1Xe/9UgrKsJ1O+FpnIrvwdSMNEI6YNMyTlhuoGVUxntM8jwWgE70tD2c9YOqLuEv2jPHPRmRqQroiBUMaxCN0fnZxOJj/x24RM4QEAAA==",
+        "extensions": {
+            "http_version": "HTTP/1.1",
+            "reason_phrase": "OK"
+        }
+    },
+    "request": {
+        "method": "GET",
+        "url": "://URL(scheme=b'https', host=b'api.rasp.yandex.net', port=None, target=b'/v3.0/carrier/?code=SU&system=iata",
+        "headers": [
+            [
+                "Host",
+                "api.rasp.yandex.net"
+            ],
+            [
+                "Accept",
+                "*/*"
+            ],
+            [
+                "Accept-Encoding",
+                "gzip, deflate"
+            ],
+            [
+                "Connection",
+                "keep-alive"
+            ],
+            [
+                "User-Agent",
+                "httpx"
+            ]
+        ],
+        "extensions": {
+            "timeout": {
+                "connect": 5.0,
+                "read": 5.0,
+                "write": 5.0,
+                "pool": 5.0
+            }
+        }
+    },
+    "metadata": {
+        "cache_key": "bdbe5a4031f3a0d884af597cc5ca4c72",
+        "number_of_uses": 34,
+        "created_at": "Sun, 14 Dec 2025 18:51:45 GMT"
+    }
+}
