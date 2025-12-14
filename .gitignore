@@ -152,7 +152,6 @@ cython_debug/
 *.sqlite
 *.sqlite3
 yarasp_counter.json
-yarasp.aviasales.cache.sqlite
 .hishel.sqlite
 
 # Large test fixtures (stored in S3)
