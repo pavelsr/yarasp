@@ -35,9 +35,16 @@ os.environ["HTTPX_TIMEOUT"] = "30.0"
 import json
 import logging
 import argparse
+import sys
 from pathlib import Path
+
+# Add project root to path for imports
+project_root = Path(__file__).parent.parent
+sys.path.insert(0, str(project_root))
+
 import hishel
 from yarasp import YaraspClient
+from scripts.fixture_requests import REQUESTS
 
 logging.basicConfig(level=logging.INFO)
 
@@ -100,51 +107,7 @@ if __name__ == "__main__":
     client = YaraspClient(cache_storage=hishel.FileStorage(base_path="tests/.cache/hishel"))
     client.api_key = api_key
 
-    requests = [
-        # Schedule between stations
-        # https://yandex.ru/dev/rasp/doc/ru/reference/schedule-point-point
-        # Example: schedule from Pulkovo to Sheremetyevo
-        {"endpoint": "search", "params": {"from": "s9600366", "to": "s9600213", "limit": 3, "transport_types": "plane"}},
-
-        # Schedule by station
-        # https://yandex.ru/dev/rasp/doc/ru/reference/schedule-on-station
-        # Example: departure schedule from Pulkovo airport
-        {"endpoint": "schedule", "params": {"station": "s9600366"}},
-
-        # List of stations on route (*)
-        # https://yandex.ru/dev/rasp/doc/ru/reference/list-stations-route
-        # Original example {"endpoint": "thread", "params": {"uid": "038AA_tis"}} no longer exists
-        # 741У "Aurora" SPb -> Moscow # {"endpoint": "thread", "params": {"uid": "741U_0_2"}},
-        # You can also try _0_2, _1_2, _2_2, _3_2
-        # 723Р "Lastochka" SPb -> Moscow
-        {"endpoint": "thread", "params": {"uid": "723R_0_2"}},
-
-        # List of nearest stations
-        # Example: 50.440046, 40.4882367 - point in Voronezh region, nearest city - Pavlovsk
-        # https://yandex.ru/dev/rasp/doc/ru/reference/query-nearest-station
-        {"endpoint": "nearest_stations", "params": {"lat": "50.440046", "lng": "40.4882367", "distance": 50}},
-
-        # Nearest city
-        # https://yandex.ru/dev/rasp/doc/ru/reference/nearest-settlement
-        # Example: 50.440046, 40.4882367 - point in Voronezh region, nearest city - Pavlovsk
-        # Value: The distance attribute in the response returns straight-line distance
-        {"endpoint": "nearest_settlement", "params": {"lat": "50.440046", "lng": "40.4882367", "distance": 50}},
-
-        # Carrier information (*)
-        # https://yandex.ru/dev/rasp/doc/ru/reference/query-carrier
-        # Example: Aeroflot
-        {"endpoint": "carrier", "params": {"code": "SU", "system": "iata"}},
-
-        # List of all available stations
-        # https://yandex.ru/dev/rasp/doc/ru/reference/stations-list
-        # Returns JSON of fairly large volume, more than 100MB
-        {"endpoint": "stations_list", "params": {}},
-        
-        # Yandex Schedule copyright
-        # https://yandex.ru/dev/rasp/doc/ru/reference/query-copyright
-        # Value: various logos in frame
-        {"endpoint": "copyright", "params": {}}
-    ]
+    requests = REQUESTS
 
     if args.gen_mock:
         mock_code = []

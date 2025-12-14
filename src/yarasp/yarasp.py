@@ -31,7 +31,7 @@ from typing import Any, Union, Optional, Set
 from dataclasses import dataclass, field
 
 #from typing import Any, Dict, Optional, Callable, Awaitable, Union
-#from typing_extensions import TypeGuard
+#from typing_extensions import TypeGuardendpoints
 
 def format_size(size_in_units):
     """Formats data size in human-readable format."""
@@ -602,10 +602,15 @@ class _YaraspClientBase:
         """
         return self.last_response_from_cache
 
-    
     @classmethod
-    def _create_wrapped_methods(cls):
-        endpoints = {
+    def _get_endpoints_config(cls):
+        """
+        Get endpoints configuration.
+        
+        Returns:
+            dict: Dictionary mapping endpoint names to (auto_paginate, result_key) tuples.
+        """
+        return {
             "search": (True, "segments"),
             "schedule": (True, "schedule"),
             "nearest_stations": (True, "stations"),
@@ -615,6 +620,10 @@ class _YaraspClientBase:
             "stations_list": (False, None),
             "copyright": (False, None)
         }
+    
+    @classmethod
+    def _create_wrapped_methods(cls):
+        endpoints = cls._get_endpoints_config()
         
         for name, (auto_paginate, result_key) in endpoints.items():
             setattr(cls, name, lambda self, params=None, ep=name, ap=auto_paginate, rk=result_key: self.get(ep, params, auto_paginate=ap, result_key=rk))
