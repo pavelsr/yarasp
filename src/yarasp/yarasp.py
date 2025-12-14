@@ -134,6 +134,212 @@ def human_readable_size(size_bytes):
     return f"{size}{size_names[i]}"
 
 ###############################################################################
+# Safe Storage Wrapper
+###############################################################################
+
+def _create_safe_storage_wrapper(storage):
+    """
+    Create a wrapper class that inherits from storage's class to pass isinstance checks.
+    
+    This allows the wrapper to be used where BaseStorage is expected by hishel.
+    """
+    import hishel
+    
+    # Inherit from storage's class so isinstance checks pass
+    # storage.__class__ is either FileStorage, SQLiteStorage, etc., which all inherit from BaseStorage
+    class SafeStorageWrapper(storage.__class__):
+        """
+        Wrapper over cache storage that removes apikey from request URL before storing.
+        
+        This prevents API keys from being saved in cache files, improving security.
+        The wrapper intercepts store() calls and cleans the URL from apikey parameter
+        before passing the request to the underlying storage.
+        """
+        
+        def __init__(self, wrapped_storage):
+            """Initialize wrapper with underlying storage."""
+            self._wrapped_storage = wrapped_storage
+            # Call super().__init__() to properly initialize the base class
+            # BaseStorage accepts optional serializer and ttl parameters
+            super().__init__(None, None)
+            # Copy all attributes from wrapped storage to maintain compatibility
+            for attr in dir(wrapped_storage):
+                if not attr.startswith('_') and not callable(getattr(wrapped_storage, attr, None)):
+                    try:
+                        setattr(self, attr, getattr(wrapped_storage, attr))
+                    except (AttributeError, TypeError):
+                        pass
+        
+        def _clean_url_from_apikey(self, url_str):
+            """Remove apikey parameter from URL string."""
+            from urllib.parse import urlparse, parse_qsl, urlencode, urlunparse
+            parsed = urlparse(str(url_str))
+            query_params = [(k, v) for k, v in parse_qsl(parsed.query) if k.lower() != "apikey"]
+            new_query = urlencode(query_params)
+            cleaned_url = urlunparse((
+                parsed.scheme, parsed.netloc, parsed.path,
+                parsed.params, new_query, parsed.fragment
+            ))
+            return cleaned_url
+        
+        def _create_clean_request(self, request):
+            """Create a new request object with URL cleaned from apikey."""
+            import httpcore
+            
+            if not hasattr(request, 'url') or not request.url:
+                return request
+            
+            cleaned_url = self._clean_url_from_apikey(request.url)
+            
+            # Create new request with cleaned URL
+            # Preserve all other attributes
+            try:
+                clean_request = httpcore.Request(
+                    method=request.method,
+                    url=cleaned_url,
+                    headers=dict(request.headers) if hasattr(request, 'headers') else {},
+                    content=getattr(request, 'stream', None),
+                    extensions=getattr(request, 'extensions', {})
+                )
+                return clean_request
+            except Exception:
+                # If we can't create clean request, return original
+                # This shouldn't happen, but better safe than sorry
+                return request
+        
+        def store(self, key, response, request, metadata=None):
+            """
+            Store request in cache after removing apikey from URL.
+            
+            Args:
+                key: Cache key
+                response: HTTP response object
+                request: HTTP request object
+                metadata: Cache metadata (optional)
+                
+            Returns:
+                Result from underlying storage.store()
+            """
+            clean_request = self._create_clean_request(request)
+            return self._wrapped_storage.store(key, response, clean_request, metadata)
+        
+        def retrieve(self, key):
+            """Retrieve cached response by key."""
+            return self._wrapped_storage.retrieve(key)
+        
+        def delete(self, key):
+            """Delete cached response by key."""
+            return self._wrapped_storage.delete(key)
+        
+        def __getattr__(self, name):
+            """Forward all other attribute access to underlying storage."""
+            return getattr(self._wrapped_storage, name)
+    
+    return SafeStorageWrapper(storage)
+    
+
+def _create_async_safe_storage_wrapper(storage):
+    """
+    Create an async wrapper class that inherits from storage's class to pass isinstance checks.
+    
+    This allows the wrapper to be used where AsyncBaseStorage is expected by hishel.
+    """
+    import hishel
+    
+    # Inherit from storage's class so isinstance checks pass
+    # storage.__class__ is either AsyncFileStorage, AsyncSQLiteStorage, etc., which all inherit from AsyncBaseStorage
+    class AsyncSafeStorageWrapper(storage.__class__):
+        """
+        Async wrapper over cache storage that removes apikey from request URL before storing.
+        
+        This prevents API keys from being saved in cache files, improving security.
+        The wrapper intercepts store() calls and cleans the URL from apikey parameter
+        before passing the request to the underlying storage.
+        """
+        
+        def __init__(self, wrapped_storage):
+            """Initialize wrapper with underlying storage."""
+            self._wrapped_storage = wrapped_storage
+            # Call super().__init__() to properly initialize the base class
+            # AsyncBaseStorage accepts optional serializer and ttl parameters
+            super().__init__(None, None)
+            # Copy all attributes from wrapped storage to maintain compatibility
+            for attr in dir(wrapped_storage):
+                if not attr.startswith('_') and not callable(getattr(wrapped_storage, attr, None)):
+                    try:
+                        setattr(self, attr, getattr(wrapped_storage, attr))
+                    except (AttributeError, TypeError):
+                        pass
+        
+        def _clean_url_from_apikey(self, url_str):
+            """Remove apikey parameter from URL string."""
+            from urllib.parse import urlparse, parse_qsl, urlencode, urlunparse
+            parsed = urlparse(str(url_str))
+            query_params = [(k, v) for k, v in parse_qsl(parsed.query) if k.lower() != "apikey"]
+            new_query = urlencode(query_params)
+            cleaned_url = urlunparse((
+                parsed.scheme, parsed.netloc, parsed.path,
+                parsed.params, new_query, parsed.fragment
+            ))
+            return cleaned_url
+        
+        def _create_clean_request(self, request):
+            """Create a new request object with URL cleaned from apikey."""
+            import httpcore
+            
+            if not hasattr(request, 'url') or not request.url:
+                return request
+            
+            cleaned_url = self._clean_url_from_apikey(request.url)
+            
+            # Create new request with cleaned URL
+            # Preserve all other attributes
+            try:
+                clean_request = httpcore.Request(
+                    method=request.method,
+                    url=cleaned_url,
+                    headers=dict(request.headers) if hasattr(request, 'headers') else {},
+                    content=getattr(request, 'stream', None),
+                    extensions=getattr(request, 'extensions', {})
+                )
+                return clean_request
+            except Exception:
+                # If we can't create clean request, return original
+                # This shouldn't happen, but better safe than sorry
+                return request
+        
+        async def store(self, key, response, request, metadata=None):
+            """
+            Store request in cache after removing apikey from URL.
+            
+            Args:
+                key: Cache key
+                response: HTTP response object
+                request: HTTP request object
+                metadata: Cache metadata (optional)
+                
+            Returns:
+                Result from underlying storage.store()
+            """
+            clean_request = self._create_clean_request(request)
+            return await self._wrapped_storage.store(key, response, clean_request, metadata)
+        
+        async def retrieve(self, key):
+            """Retrieve cached response by key."""
+            return await self._wrapped_storage.retrieve(key)
+        
+        async def delete(self, key):
+            """Delete cached response by key."""
+            return await self._wrapped_storage.delete(key)
+        
+        def __getattr__(self, name):
+            """Forward all other attribute access to underlying storage."""
+            return getattr(self._wrapped_storage, name)
+    
+    return AsyncSafeStorageWrapper(storage)
+
+
+###############################################################################
 # Common base class
 ###############################################################################
 @dataclass
@@ -193,10 +399,14 @@ class _YaraspClientBase:
                 if not isinstance(self.cache_storage, hishel.AsyncBaseStorage):
                     #self.cache_storage = hishel.AsyncSQLiteStorage()
                     self.cache_storage = hishel.AsyncFileStorage()
+                # Wrap storage to remove apikey from URLs before storing
+                self.cache_storage = _create_async_safe_storage_wrapper(self.cache_storage)
             else:
                 if not isinstance(self.cache_storage, hishel.BaseStorage):
                     #self.cache_storage = hishel.SQLiteStorage()
                     self.cache_storage = hishel.FileStorage()
+                # Wrap storage to remove apikey from URLs before storing
+                self.cache_storage = _create_safe_storage_wrapper(self.cache_storage)
 
             def custom_key_generator(request: "httpcore.Request", body: bytes = b"") -> str:
                 # modified hishel._utils.generate_key function

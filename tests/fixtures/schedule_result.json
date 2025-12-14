@@ -39,7 +39,7 @@
                     "code": null,
                     "color": null
                 },
-                "uid": "FV-6829_260331_c8565_12"
+                "uid": "FV-6829_260713_c8565_12"
             },
             "terminal": "1",
             "is_fuzzy": false,
@@ -85,19 +85,19 @@
         },
         {
             "thread": {
-                "number": "N4 333",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0422\u044e\u043c\u0435\u043d\u044c",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0422\u044e\u043c\u0435\u043d\u044c",
+                "number": "WZ 3195",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0425\u0430\u043c\u0431\u0430\u043d\u0442\u043e\u0442\u0430",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0425\u0430\u043c\u0431\u0430\u043d\u0442\u043e\u0442\u0430",
                 "carrier": {
-                    "code": 2543,
-                    "title": "Nordwind",
+                    "code": 617,
+                    "title": "Red Wings",
                     "codes": {
-                        "sirena": "\u041a\u041b",
-                        "iata": "N4",
-                        "icao": "NWS"
+                        "sirena": "\u0418\u041d",
+                        "iata": "WZ",
+                        "icao": "RWZ"
                     }
                 },
-                "vehicle": "Boeing 737-800",
+                "vehicle": "Boeing 777-200",
                 "transport_type": "plane",
                 "express_type": null,
                 "transport_subtype": {
@@ -105,7 +105,7 @@
                     "code": null,
                     "color": null
                 },
-                "uid": "N4-333_251229_c2543_12"
+                "uid": "WZ-3195_260212_c617_12"
             },
             "terminal": "1",
             "is_fuzzy": false,
@@ -114,7 +114,7 @@
             "except_days": null,
             "departure": "00:10",
             "arrival": null,
-            "days": "29\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f"
+            "days": "22\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 1, 12, 22\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, 2, 12, 23\u00a0\u0444\u0435\u0432\u0440\u0430\u043b\u044f, 5, 16, 26\u00a0\u043c\u0430\u0440\u0442\u0430"
         },
         {
             "thread": {
@@ -151,42 +151,9 @@
         },
         {
             "thread": {
-                "number": "N4 2301",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041a\u0440\u0430\u0441\u043d\u043e\u044f\u0440\u0441\u043a",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041a\u0440\u0430\u0441\u043d\u043e\u044f\u0440\u0441\u043a",
-                "carrier": {
-                    "code": 2543,
-                    "title": "Nordwind",
-                    "codes": {
-                        "sirena": "\u041a\u041b",
-                        "iata": "N4",
-                        "icao": "NWS"
-                    }
-                },
-                "vehicle": "Boeing 737-800",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "N4-2301_260111_c2543_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "00:10",
-            "arrival": null,
-            "days": "11\u00a0\u044f\u043d\u0432\u0430\u0440\u044f"
-        },
-        {
-            "thread": {
-                "number": "EO 2269",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u0440\u0441\u043a",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u0440\u0441\u043a",
+                "number": "EO 3483",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041f\u0445\u0443\u043a\u0435\u0442",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041f\u0445\u0443\u043a\u0435\u0442",
                 "carrier": {
                     "code": 196,
                     "title": "Ikar",
@@ -196,7 +163,7 @@
                         "icao": "KAR"
                     }
                 },
-                "vehicle": "Embraer 190",
+                "vehicle": "Boeing 777-200",
                 "transport_type": "plane",
                 "express_type": null,
                 "transport_subtype": {
@@ -204,7 +171,7 @@
                     "code": null,
                     "color": null
                 },
-                "uid": "EO-2269_251231_c196_12"
+                "uid": "EO-3483_260120_c196_12"
             },
             "terminal": "1",
             "is_fuzzy": false,
@@ -213,106 +180,7 @@
             "except_days": null,
             "departure": "00:10",
             "arrival": null,
-            "days": "31\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f"
-        },
-        {
-            "thread": {
-                "number": "N4 329",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0413\u043e\u0440\u043d\u043e-\u0410\u043b\u0442\u0430\u0439\u0441\u043a",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0413\u043e\u0440\u043d\u043e-\u0410\u043b\u0442\u0430\u0439\u0441\u043a",
-                "carrier": {
-                    "code": 2543,
-                    "title": "Nordwind",
-                    "codes": {
-                        "sirena": "\u041a\u041b",
-                        "iata": "N4",
-                        "icao": "NWS"
-                    }
-                },
-                "vehicle": null,
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "N4-329_260603_c2543_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "00:10",
-            "arrival": null,
-            "days": "\u0441\u0440, \u0432\u0441 \u0441 03.06 \u043f\u043e 04.10"
-        },
-        {
-            "thread": {
-                "number": "N4 329",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0413\u043e\u0440\u043d\u043e-\u0410\u043b\u0442\u0430\u0439\u0441\u043a",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0413\u043e\u0440\u043d\u043e-\u0410\u043b\u0442\u0430\u0439\u0441\u043a",
-                "carrier": {
-                    "code": 2543,
-                    "title": "Nordwind",
-                    "codes": {
-                        "sirena": "\u041a\u041b",
-                        "iata": "N4",
-                        "icao": "NWS"
-                    }
-                },
-                "vehicle": "Boeing 737-800",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "N4-329_260520_c2543_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "00:10",
-            "arrival": null,
-            "days": "20, 27\u00a0\u043c\u0430\u044f"
-        },
-        {
-            "thread": {
-                "number": "FV 6587",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0421\u044b\u043a\u0442\u044b\u0432\u043a\u0430\u0440",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0421\u044b\u043a\u0442\u044b\u0432\u043a\u0430\u0440",
-                "carrier": {
-                    "code": 8565,
-                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
-                    "codes": {
-                        "sirena": "\u0424\u0412",
-                        "iata": "FV",
-                        "icao": null
-                    }
-                },
-                "vehicle": "\u0421\u0443\u0445\u043e\u0439 \u0421\u0443\u043f\u0435\u0440\u0434\u0436\u0435\u0442 100",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "FV-6587_260330_c8565_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "00:10",
-            "arrival": null,
-            "days": "30, 31\u00a0\u043c\u0430\u0440\u0442\u0430, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18\u00a0\u0430\u043f\u0440\u0435\u043b\u044f, \u2026"
+            "days": "15\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 20\u00a0\u044f\u043d\u0432\u0430\u0440\u044f"
         },
         {
             "thread": {
@@ -349,19 +217,19 @@
         },
         {
             "thread": {
-                "number": "WZ 3195",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0425\u0430\u043c\u0431\u0430\u043d\u0442\u043e\u0442\u0430",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0425\u0430\u043c\u0431\u0430\u043d\u0442\u043e\u0442\u0430",
+                "number": "FV 6587",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0421\u044b\u043a\u0442\u044b\u0432\u043a\u0430\u0440",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0421\u044b\u043a\u0442\u044b\u0432\u043a\u0430\u0440",
                 "carrier": {
-                    "code": 617,
-                    "title": "Red Wings",
+                    "code": 8565,
+                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
                     "codes": {
-                        "sirena": "\u0418\u041d",
-                        "iata": "WZ",
-                        "icao": "RWZ"
+                        "sirena": "\u0424\u0412",
+                        "iata": "FV",
+                        "icao": null
                     }
                 },
-                "vehicle": "Boeing 777-200",
+                "vehicle": "\u0421\u0443\u0445\u043e\u0439 \u0421\u0443\u043f\u0435\u0440\u0434\u0436\u0435\u0442 100",
                 "transport_type": "plane",
                 "express_type": null,
                 "transport_subtype": {
@@ -369,7 +237,7 @@
                     "code": null,
                     "color": null
                 },
-                "uid": "WZ-3195_251222_c617_12"
+                "uid": "FV-6587_260330_c8565_12"
             },
             "terminal": "1",
             "is_fuzzy": false,
@@ -378,13 +246,112 @@
             "except_days": null,
             "departure": "00:10",
             "arrival": null,
-            "days": "22\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 1, 12, 22\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, 2, 12, 23\u00a0\u0444\u0435\u0432\u0440\u0430\u043b\u044f, 5, 16, 26\u00a0\u043c\u0430\u0440\u0442\u0430"
+            "days": "30, 31\u00a0\u043c\u0430\u0440\u0442\u0430, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18\u00a0\u0430\u043f\u0440\u0435\u043b\u044f, \u2026"
         },
         {
             "thread": {
-                "number": "EO 3483",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041f\u0445\u0443\u043a\u0435\u0442",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041f\u0445\u0443\u043a\u0435\u0442",
+                "number": "N4 329",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0413\u043e\u0440\u043d\u043e-\u0410\u043b\u0442\u0430\u0439\u0441\u043a",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0413\u043e\u0440\u043d\u043e-\u0410\u043b\u0442\u0430\u0439\u0441\u043a",
+                "carrier": {
+                    "code": 2543,
+                    "title": "Nordwind",
+                    "codes": {
+                        "sirena": "\u041a\u041b",
+                        "iata": "N4",
+                        "icao": "NWS"
+                    }
+                },
+                "vehicle": "Boeing 737-800",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "N4-329_260520_c2543_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:10",
+            "arrival": null,
+            "days": "20, 27\u00a0\u043c\u0430\u044f"
+        },
+        {
+            "thread": {
+                "number": "N4 329",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0413\u043e\u0440\u043d\u043e-\u0410\u043b\u0442\u0430\u0439\u0441\u043a",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0413\u043e\u0440\u043d\u043e-\u0410\u043b\u0442\u0430\u0439\u0441\u043a",
+                "carrier": {
+                    "code": 2543,
+                    "title": "Nordwind",
+                    "codes": {
+                        "sirena": "\u041a\u041b",
+                        "iata": "N4",
+                        "icao": "NWS"
+                    }
+                },
+                "vehicle": null,
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "N4-329_260603_c2543_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:10",
+            "arrival": null,
+            "days": "\u0441\u0440, \u0432\u0441 \u0441 03.06 \u043f\u043e 04.10"
+        },
+        {
+            "thread": {
+                "number": "N4 333",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0422\u044e\u043c\u0435\u043d\u044c",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0422\u044e\u043c\u0435\u043d\u044c",
+                "carrier": {
+                    "code": 2543,
+                    "title": "Nordwind",
+                    "codes": {
+                        "sirena": "\u041a\u041b",
+                        "iata": "N4",
+                        "icao": "NWS"
+                    }
+                },
+                "vehicle": "Boeing 737-800",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "N4-333_251229_c2543_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:10",
+            "arrival": null,
+            "days": "29\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f"
+        },
+        {
+            "thread": {
+                "number": "EO 2269",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u0440\u0441\u043a",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u0440\u0441\u043a",
                 "carrier": {
                     "code": 196,
                     "title": "Ikar",
@@ -394,7 +361,7 @@
                         "icao": "KAR"
                     }
                 },
-                "vehicle": "Boeing 777-200",
+                "vehicle": "Embraer 190",
                 "transport_type": "plane",
                 "express_type": null,
                 "transport_subtype": {
@@ -402,7 +369,7 @@
                     "code": null,
                     "color": null
                 },
-                "uid": "EO-3483_260120_c196_12"
+                "uid": "EO-2269_251231_c196_12"
             },
             "terminal": "1",
             "is_fuzzy": false,
@@ -411,7 +378,40 @@
             "except_days": null,
             "departure": "00:10",
             "arrival": null,
-            "days": "15\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 20\u00a0\u044f\u043d\u0432\u0430\u0440\u044f"
+            "days": "31\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f"
+        },
+        {
+            "thread": {
+                "number": "N4 2301",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041a\u0440\u0430\u0441\u043d\u043e\u044f\u0440\u0441\u043a",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041a\u0440\u0430\u0441\u043d\u043e\u044f\u0440\u0441\u043a",
+                "carrier": {
+                    "code": 2543,
+                    "title": "Nordwind",
+                    "codes": {
+                        "sirena": "\u041a\u041b",
+                        "iata": "N4",
+                        "icao": "NWS"
+                    }
+                },
+                "vehicle": "Boeing 737-800",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "N4-2301_260111_c2543_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:10",
+            "arrival": null,
+            "days": "11\u00a0\u044f\u043d\u0432\u0430\u0440\u044f"
         },
         {
             "thread": {
@@ -514,42 +514,9 @@
         },
         {
             "thread": {
-                "number": "SU 45",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041c\u043e\u0441\u043a\u0432\u0430",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041c\u043e\u0441\u043a\u0432\u0430",
-                "carrier": {
-                    "code": 26,
-                    "title": "\u0410\u044d\u0440\u043e\u0444\u043b\u043e\u0442",
-                    "codes": {
-                        "sirena": "\u0421\u0423",
-                        "iata": "SU",
-                        "icao": "AFL"
-                    }
-                },
-                "vehicle": "Airbus A320",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "SU-45_251215_c26_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "00:20",
-            "arrival": null,
-            "days": "15, 22\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f"
-        },
-        {
-            "thread": {
-                "number": "FV 6411",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0423\u0444\u0430",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0423\u0444\u0430",
+                "number": "FV 6401",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0415\u043a\u0430\u0442\u0435\u0440\u0438\u043d\u0431\u0443\u0440\u0433",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0415\u043a\u0430\u0442\u0435\u0440\u0438\u043d\u0431\u0443\u0440\u0433",
                 "carrier": {
                     "code": 8565,
                     "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
@@ -567,7 +534,7 @@
                     "code": null,
                     "color": null
                 },
-                "uid": "FV-6411_251229_c8565_12"
+                "uid": "FV-6401_260323_c8565_12"
             },
             "terminal": "1",
             "is_fuzzy": false,
@@ -576,7 +543,7 @@
             "except_days": null,
             "departure": "00:20",
             "arrival": null,
-            "days": "21, 29\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 12\u00a0\u044f\u043d\u0432\u0430\u0440\u044f"
+            "days": "15, 20, 22\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 19, 20, 24, 25, 26, 27\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, \u2026"
         },
         {
             "thread": {
@@ -600,7 +567,7 @@
                     "code": null,
                     "color": null
                 },
-                "uid": "FV-6401_260322_c8565_12"
+                "uid": "FV-6401_251214_c8565_12"
             },
             "terminal": "1",
             "is_fuzzy": false,
@@ -633,7 +600,7 @@
                     "code": null,
                     "color": null
                 },
-                "uid": "FV-6401_260408_c8565_12"
+                "uid": "FV-6401_260425_c8565_12"
             },
             "terminal": "1",
             "is_fuzzy": false,
@@ -643,72 +610,6 @@
             "departure": "00:20",
             "arrival": null,
             "days": "30\u00a0\u043c\u0430\u0440\u0442\u0430, 1, 2, 4, 5, 6, 8, 9, 10, 12, 13, 15, 16, 17, 19, 20, 22, 23, 25, 26\u00a0\u0430\u043f\u0440\u0435\u043b\u044f, \u2026"
-        },
-        {
-            "thread": {
-                "number": "FV 6401",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0415\u043a\u0430\u0442\u0435\u0440\u0438\u043d\u0431\u0443\u0440\u0433",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0415\u043a\u0430\u0442\u0435\u0440\u0438\u043d\u0431\u0443\u0440\u0433",
-                "carrier": {
-                    "code": 8565,
-                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
-                    "codes": {
-                        "sirena": "\u0424\u0412",
-                        "iata": "FV",
-                        "icao": null
-                    }
-                },
-                "vehicle": "\u0421\u0443\u0445\u043e\u0439 \u0421\u0443\u043f\u0435\u0440\u0434\u0436\u0435\u0442 100",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "FV-6401_251213_c8565_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "00:20",
-            "arrival": null,
-            "days": "13, 15, 20, 22\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 19, 20, 24, 25, 26\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, \u2026"
-        },
-        {
-            "thread": {
-                "number": "TK 400",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0421\u0442\u0430\u043c\u0431\u0443\u043b",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0421\u0442\u0430\u043c\u0431\u0443\u043b",
-                "carrier": {
-                    "code": 680,
-                    "title": "Turkish Airlines",
-                    "codes": {
-                        "sirena": null,
-                        "iata": "TK",
-                        "icao": "THY"
-                    }
-                },
-                "vehicle": "Airbus A321",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "TK-400_251213_c680_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "00:20",
-            "arrival": null,
-            "days": "\u043f\u043d, \u0432\u0442, \u0447\u0442, \u0441\u0431 \u043f\u043e 28.03, \u043a\u0440\u043e\u043c\u0435 01.01"
         },
         {
             "thread": {
@@ -742,6 +643,237 @@
             "departure": "00:20",
             "arrival": null,
             "days": "\u043f\u0442 \u0441 05.06 \u043f\u043e 28.08"
+        },
+        {
+            "thread": {
+                "number": "SU 45",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041c\u043e\u0441\u043a\u0432\u0430",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041c\u043e\u0441\u043a\u0432\u0430",
+                "carrier": {
+                    "code": 26,
+                    "title": "\u0410\u044d\u0440\u043e\u0444\u043b\u043e\u0442",
+                    "codes": {
+                        "sirena": "\u0421\u0423",
+                        "iata": "SU",
+                        "icao": "AFL"
+                    }
+                },
+                "vehicle": "Airbus A320",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "SU-45_251215_c26_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:20",
+            "arrival": null,
+            "days": "15, 22\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f"
+        },
+        {
+            "thread": {
+                "number": "TK 400",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0421\u0442\u0430\u043c\u0431\u0443\u043b",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0421\u0442\u0430\u043c\u0431\u0443\u043b",
+                "carrier": {
+                    "code": 680,
+                    "title": "Turkish Airlines",
+                    "codes": {
+                        "sirena": null,
+                        "iata": "TK",
+                        "icao": "THY"
+                    }
+                },
+                "vehicle": "Airbus A321",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "TK-400_251230_c680_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:20",
+            "arrival": null,
+            "days": "\u043f\u043d, \u0432\u0442, \u0447\u0442, \u0441\u0431 \u043f\u043e 28.03, \u043a\u0440\u043e\u043c\u0435 01.01"
+        },
+        {
+            "thread": {
+                "number": "FV 6411",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0423\u0444\u0430",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0423\u0444\u0430",
+                "carrier": {
+                    "code": 8565,
+                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
+                    "codes": {
+                        "sirena": "\u0424\u0412",
+                        "iata": "FV",
+                        "icao": null
+                    }
+                },
+                "vehicle": "\u0421\u0443\u0445\u043e\u0439 \u0421\u0443\u043f\u0435\u0440\u0434\u0436\u0435\u0442 100",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "FV-6411_251221_c8565_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:20",
+            "arrival": null,
+            "days": "21, 29\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 12\u00a0\u044f\u043d\u0432\u0430\u0440\u044f"
+        },
+        {
+            "thread": {
+                "number": "FV 6461",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a",
+                "carrier": {
+                    "code": 8565,
+                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
+                    "codes": {
+                        "sirena": "\u0424\u0412",
+                        "iata": "FV",
+                        "icao": null
+                    }
+                },
+                "vehicle": "Airbus A319",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "FV-6461_260316_c8565_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:25",
+            "arrival": null,
+            "days": "15, 18, 19, 20, 22, 25, 26, 27, 29, 31\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 2, 3, 5, 7, 8, 10, 12, 14, 15, 17\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, \u2026"
+        },
+        {
+            "thread": {
+                "number": "FV 6461",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a",
+                "carrier": {
+                    "code": 8565,
+                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
+                    "codes": {
+                        "sirena": "\u0424\u0412",
+                        "iata": "FV",
+                        "icao": null
+                    }
+                },
+                "vehicle": "Airbus A320",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "FV-6461_260317_c8565_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:25",
+            "arrival": null,
+            "days": "6, 9, 11, 13, 16, 20, 23, 27, 30\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, 1, 6, 13, 20, 27\u00a0\u0444\u0435\u0432\u0440\u0430\u043b\u044f, 1, 2, 3, 9, 10, 17\u00a0\u043c\u0430\u0440\u0442\u0430, \u2026"
+        },
+        {
+            "thread": {
+                "number": "FZ 992",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0414\u0443\u0431\u0430\u0439",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0414\u0443\u0431\u0430\u0439",
+                "carrier": {
+                    "code": 1743,
+                    "title": "Flydubai",
+                    "codes": {
+                        "sirena": null,
+                        "iata": "FZ",
+                        "icao": null
+                    }
+                },
+                "vehicle": "Boeing 737",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "FZ-992_251214_c1743_12"
+            },
+            "terminal": "0",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:25",
+            "arrival": null,
+            "days": "\u0435\u0436\u0435\u0434\u043d\u0435\u0432\u043d\u043e \u043f\u043e 13.05"
+        },
+        {
+            "thread": {
+                "number": "C6 422",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0422\u0430\u0448\u043a\u0435\u043d\u0442",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0422\u0430\u0448\u043a\u0435\u043d\u0442",
+                "carrier": {
+                    "code": 66259,
+                    "title": "Centrum Air",
+                    "codes": {
+                        "sirena": null,
+                        "iata": "C6",
+                        "icao": null
+                    }
+                },
+                "vehicle": "Airbus \u0410320",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "C6-422_251217_c66259_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:25",
+            "arrival": null,
+            "days": "\u0441\u0440 \u043f\u043e 25.03"
         },
         {
             "thread": {
@@ -798,7 +930,7 @@
                     "code": null,
                     "color": null
                 },
-                "uid": "FV-6411_251213_c8565_12"
+                "uid": "FV-6411_251214_c8565_12"
             },
             "terminal": "1",
             "is_fuzzy": false,
@@ -807,7 +939,7 @@
             "except_days": null,
             "departure": "00:25",
             "arrival": null,
-            "days": "13, 14, 15\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 2, 3, 8, 9, 10, 11, 13, 15, 16, 17, 19, 20, 23, 24, 26, 27, 31\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, \u2026"
+            "days": "14, 15\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 2, 3, 8, 9, 10, 11, 13, 15, 16, 17, 19, 20, 23, 24, 26, 27, 31\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, 2\u00a0\u0444\u0435\u0432\u0440\u0430\u043b\u044f, \u2026"
         },
         {
             "thread": {
@@ -831,7 +963,7 @@
                     "code": null,
                     "color": null
                 },
-                "uid": "FV-6411_251230_c8565_12"
+                "uid": "FV-6411_260118_c8565_12"
             },
             "terminal": "1",
             "is_fuzzy": false,
@@ -841,138 +973,6 @@
             "departure": "00:25",
             "arrival": null,
             "days": "16, 17, 18, 19, 20, 22, 23, 24, 25, 26, 27, 28, 30, 31\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 4, 5, 6, 7, 14, 18\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, \u2026"
-        },
-        {
-            "thread": {
-                "number": "FV 6461",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a",
-                "carrier": {
-                    "code": 8565,
-                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
-                    "codes": {
-                        "sirena": "\u0424\u0412",
-                        "iata": "FV",
-                        "icao": null
-                    }
-                },
-                "vehicle": "Airbus A320",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "FV-6461_260106_c8565_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "00:25",
-            "arrival": null,
-            "days": "6, 9, 11, 13, 16, 20, 23, 27, 30\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, 1, 6, 13, 20, 27\u00a0\u0444\u0435\u0432\u0440\u0430\u043b\u044f, 1, 2, 3, 9, 10, 17\u00a0\u043c\u0430\u0440\u0442\u0430, \u2026"
-        },
-        {
-            "thread": {
-                "number": "FV 6461",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a",
-                "carrier": {
-                    "code": 8565,
-                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
-                    "codes": {
-                        "sirena": "\u0424\u0412",
-                        "iata": "FV",
-                        "icao": null
-                    }
-                },
-                "vehicle": "Airbus A319",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "FV-6461_251213_c8565_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "00:25",
-            "arrival": null,
-            "days": "13, 15, 18, 19, 20, 22, 25, 26, 27, 29, 31\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 2, 3, 5, 7, 8, 10, 12, 14, 15\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, \u2026"
-        },
-        {
-            "thread": {
-                "number": "FZ 992",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0414\u0443\u0431\u0430\u0439",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0414\u0443\u0431\u0430\u0439",
-                "carrier": {
-                    "code": 1743,
-                    "title": "Flydubai",
-                    "codes": {
-                        "sirena": null,
-                        "iata": "FZ",
-                        "icao": null
-                    }
-                },
-                "vehicle": "Boeing 737",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "FZ-992_251213_c1743_12"
-            },
-            "terminal": "0",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "00:25",
-            "arrival": null,
-            "days": "\u0435\u0436\u0435\u0434\u043d\u0435\u0432\u043d\u043e \u043f\u043e 12.05"
-        },
-        {
-            "thread": {
-                "number": "C6 422",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0422\u0430\u0448\u043a\u0435\u043d\u0442",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0422\u0430\u0448\u043a\u0435\u043d\u0442",
-                "carrier": {
-                    "code": 66259,
-                    "title": "Centrum Air",
-                    "codes": {
-                        "sirena": null,
-                        "iata": "C6",
-                        "icao": null
-                    }
-                },
-                "vehicle": "Airbus \u0410320",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "C6-422_251217_c66259_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "00:25",
-            "arrival": null,
-            "days": "\u0441\u0440 \u043f\u043e 25.03"
         },
         {
             "thread": {
@@ -996,7 +996,7 @@
                     "code": null,
                     "color": null
                 },
-                "uid": "FV-6001_260330_c8565_12"
+                "uid": "FV-6001_260411_c8565_12"
             },
             "terminal": "1",
             "is_fuzzy": false,
@@ -1029,7 +1029,7 @@
                     "code": null,
                     "color": null
                 },
-                "uid": "FV-6001_260407_c8565_12"
+                "uid": "FV-6001_260331_c8565_12"
             },
             "terminal": "1",
             "is_fuzzy": false,
@@ -1039,6 +1039,237 @@
             "departure": "00:25",
             "arrival": null,
             "days": "\u0432\u0442, \u043f\u0442 \u0441 31.03 \u043f\u043e 28.04, \u043a\u0440\u043e\u043c\u0435 03.04"
+        },
+        {
+            "thread": {
+                "number": "N4 331",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0422\u044e\u043c\u0435\u043d\u044c",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0422\u044e\u043c\u0435\u043d\u044c",
+                "carrier": {
+                    "code": 2543,
+                    "title": "Nordwind",
+                    "codes": {
+                        "sirena": "\u041a\u041b",
+                        "iata": "N4",
+                        "icao": "NWS"
+                    }
+                },
+                "vehicle": "Boeing 737-800",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "N4-331_260907_c2543_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:30",
+            "arrival": null,
+            "days": "3, 5, 10, 12, 17, 19, 24, 26\u00a0\u0430\u043f\u0440\u0435\u043b\u044f, 4, 11, 18, 25\u00a0\u043c\u0430\u044f, 7, 14, 21, 28\u00a0\u0441\u0435\u043d\u0442\u044f\u0431\u0440\u044f"
+        },
+        {
+            "thread": {
+                "number": "FV 6461",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a",
+                "carrier": {
+                    "code": 8565,
+                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
+                    "codes": {
+                        "sirena": "\u0424\u0412",
+                        "iata": "FV",
+                        "icao": null
+                    }
+                },
+                "vehicle": "Airbus A320",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "FV-6461_260329_c8565_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:30",
+            "arrival": null,
+            "days": "15, 22, 29\u00a0\u043c\u0430\u0440\u0442\u0430"
+        },
+        {
+            "thread": {
+                "number": "FV 6461",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a",
+                "carrier": {
+                    "code": 8565,
+                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
+                    "codes": {
+                        "sirena": "\u0424\u0412",
+                        "iata": "FV",
+                        "icao": null
+                    }
+                },
+                "vehicle": "Airbus \u0410320",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "FV-6461_251214_c8565_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:30",
+            "arrival": null,
+            "days": "14, 16, 17, 21, 23, 24, 28\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 4, 18\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, 3, 8, 10, 15, 17, 22, 24\u00a0\u0444\u0435\u0432\u0440\u0430\u043b\u044f"
+        },
+        {
+            "thread": {
+                "number": "FV 6461",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a",
+                "carrier": {
+                    "code": 8565,
+                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
+                    "codes": {
+                        "sirena": "\u0424\u0412",
+                        "iata": "FV",
+                        "icao": null
+                    }
+                },
+                "vehicle": "Airbus A319",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "FV-6461_260125_c8565_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:30",
+            "arrival": null,
+            "days": "25\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, 8\u00a0\u043c\u0430\u0440\u0442\u0430"
+        },
+        {
+            "thread": {
+                "number": "XC 9401",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0410\u043d\u0442\u0430\u043b\u044c\u044f",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0410\u043d\u0442\u0430\u043b\u044c\u044f",
+                "carrier": {
+                    "code": 60868,
+                    "title": "Corendon Airlines",
+                    "codes": {
+                        "sirena": null,
+                        "iata": "XC",
+                        "icao": "CAI"
+                    }
+                },
+                "vehicle": "Boeing 737-800",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "XC-9401_260430_c60868_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:30",
+            "arrival": null,
+            "days": "\u0447\u0442 \u0441 30.04 \u043f\u043e 27.08, \u043a\u0440\u043e\u043c\u0435 30.07"
+        },
+        {
+            "thread": {
+                "number": "SU 2874",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0418\u0440\u043a\u0443\u0442\u0441\u043a",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0418\u0440\u043a\u0443\u0442\u0441\u043a",
+                "carrier": {
+                    "code": 26,
+                    "title": "\u0410\u044d\u0440\u043e\u0444\u043b\u043e\u0442",
+                    "codes": {
+                        "sirena": "\u0421\u0423",
+                        "iata": "SU",
+                        "icao": "AFL"
+                    }
+                },
+                "vehicle": "Airbus A320",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "SU-2874_251230_c26_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:30",
+            "arrival": null,
+            "days": "30, 31\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 3, 5, 10, 12, 17, 19, 24, 26\u00a0\u0444\u0435\u0432\u0440\u0430\u043b\u044f"
+        },
+        {
+            "thread": {
+                "number": "XC 9509",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0410\u043d\u0442\u0430\u043b\u044c\u044f",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0410\u043d\u0442\u0430\u043b\u044c\u044f",
+                "carrier": {
+                    "code": 60868,
+                    "title": "Corendon Airlines",
+                    "codes": {
+                        "sirena": null,
+                        "iata": "XC",
+                        "icao": "CAI"
+                    }
+                },
+                "vehicle": "Boeing 737-800",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "XC-9509_260425_c60868_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:30",
+            "arrival": null,
+            "days": "\u0441\u0431 \u0441 25.04 \u043f\u043e 29.08, \u043a\u0440\u043e\u043c\u0435 01.08"
         },
         {
             "thread": {
@@ -1072,6 +1303,39 @@
             "departure": "00:30",
             "arrival": null,
             "days": "\u0432\u0441 \u0441 03.05 \u043f\u043e 27.09"
+        },
+        {
+            "thread": {
+                "number": "XC 9615",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0410\u043d\u0442\u0430\u043b\u044c\u044f",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0410\u043d\u0442\u0430\u043b\u044c\u044f",
+                "carrier": {
+                    "code": 60868,
+                    "title": "Corendon Airlines",
+                    "codes": {
+                        "sirena": null,
+                        "iata": "XC",
+                        "icao": "CAI"
+                    }
+                },
+                "vehicle": "Boeing 737-800",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "XC-9615_260809_c60868_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:30",
+            "arrival": null,
+            "days": "\u0432\u0441 \u0441 05.04 \u043f\u043e 30.08, \u043a\u0440\u043e\u043c\u0435 02.08"
         },
         {
             "thread": {
@@ -1128,7 +1392,7 @@
                     "code": null,
                     "color": null
                 },
-                "uid": "J2-20_251213_c100_12"
+                "uid": "J2-20_251214_c100_12"
             },
             "terminal": "1",
             "is_fuzzy": false,
@@ -1137,7 +1401,7 @@
             "except_days": null,
             "departure": "00:30",
             "arrival": null,
-            "days": "13, 14, 17, 19, 20, 21, 24, 26, 27, 31\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 2, 3, 7, 8, 9, 10, 11, 14, 15, 16\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, \u2026"
+            "days": "14, 17, 19, 20, 21, 24, 26, 27, 31\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 2, 3, 7, 8, 9, 10, 11, 14, 15, 16, 17\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, \u2026"
         },
         {
             "thread": {
@@ -1171,303 +1435,6 @@
             "departure": "00:30",
             "arrival": null,
             "days": "18, 25, 28\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 4\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, 8, 15, 22\u00a0\u0444\u0435\u0432\u0440\u0430\u043b\u044f, 1, 8, 15, 22, 29\u00a0\u043c\u0430\u0440\u0442\u0430"
-        },
-        {
-            "thread": {
-                "number": "XC 9727",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0410\u043d\u0442\u0430\u043b\u044c\u044f",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0410\u043d\u0442\u0430\u043b\u044c\u044f",
-                "carrier": {
-                    "code": 60868,
-                    "title": "Corendon Airlines",
-                    "codes": {
-                        "sirena": null,
-                        "iata": "XC",
-                        "icao": "CAI"
-                    }
-                },
-                "vehicle": "Boeing 737-800",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "XC-9727_260429_c60868_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "00:30",
-            "arrival": null,
-            "days": "\u0441\u0440 \u0441 29.04 \u043f\u043e 26.08, \u043a\u0440\u043e\u043c\u0435 29.07"
-        },
-        {
-            "thread": {
-                "number": "FV 6461",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a",
-                "carrier": {
-                    "code": 8565,
-                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
-                    "codes": {
-                        "sirena": "\u0424\u0412",
-                        "iata": "FV",
-                        "icao": null
-                    }
-                },
-                "vehicle": "Airbus A320",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "FV-6461_260329_c8565_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "00:30",
-            "arrival": null,
-            "days": "15, 22, 29\u00a0\u043c\u0430\u0440\u0442\u0430"
-        },
-        {
-            "thread": {
-                "number": "FV 6461",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a",
-                "carrier": {
-                    "code": 8565,
-                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
-                    "codes": {
-                        "sirena": "\u0424\u0412",
-                        "iata": "FV",
-                        "icao": null
-                    }
-                },
-                "vehicle": "Airbus A319",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "FV-6461_260125_c8565_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "00:30",
-            "arrival": null,
-            "days": "25\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, 8\u00a0\u043c\u0430\u0440\u0442\u0430"
-        },
-        {
-            "thread": {
-                "number": "FV 6461",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a",
-                "carrier": {
-                    "code": 8565,
-                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
-                    "codes": {
-                        "sirena": "\u0424\u0412",
-                        "iata": "FV",
-                        "icao": null
-                    }
-                },
-                "vehicle": "Airbus \u0410320",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "FV-6461_260104_c8565_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "00:30",
-            "arrival": null,
-            "days": "14, 16, 17, 21, 23, 24, 28\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 4, 18\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, 3, 8, 10, 15, 17, 22, 24\u00a0\u0444\u0435\u0432\u0440\u0430\u043b\u044f"
-        },
-        {
-            "thread": {
-                "number": "XC 9401",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0410\u043d\u0442\u0430\u043b\u044c\u044f",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0410\u043d\u0442\u0430\u043b\u044c\u044f",
-                "carrier": {
-                    "code": 60868,
-                    "title": "Corendon Airlines",
-                    "codes": {
-                        "sirena": null,
-                        "iata": "XC",
-                        "icao": "CAI"
-                    }
-                },
-                "vehicle": "Boeing 737-800",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "XC-9401_260430_c60868_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "00:30",
-            "arrival": null,
-            "days": "\u0447\u0442 \u0441 30.04 \u043f\u043e 27.08, \u043a\u0440\u043e\u043c\u0435 30.07"
-        },
-        {
-            "thread": {
-                "number": "N4 331",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0422\u044e\u043c\u0435\u043d\u044c",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0422\u044e\u043c\u0435\u043d\u044c",
-                "carrier": {
-                    "code": 2543,
-                    "title": "Nordwind",
-                    "codes": {
-                        "sirena": "\u041a\u041b",
-                        "iata": "N4",
-                        "icao": "NWS"
-                    }
-                },
-                "vehicle": "Boeing 737-800",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "N4-331_260403_c2543_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "00:30",
-            "arrival": null,
-            "days": "3, 5, 10, 12, 17, 19, 24, 26\u00a0\u0430\u043f\u0440\u0435\u043b\u044f, 4, 11, 18, 25\u00a0\u043c\u0430\u044f, 7, 14, 21, 28\u00a0\u0441\u0435\u043d\u0442\u044f\u0431\u0440\u044f"
-        },
-        {
-            "thread": {
-                "number": "SU 2874",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0418\u0440\u043a\u0443\u0442\u0441\u043a",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0418\u0440\u043a\u0443\u0442\u0441\u043a",
-                "carrier": {
-                    "code": 26,
-                    "title": "\u0410\u044d\u0440\u043e\u0444\u043b\u043e\u0442",
-                    "codes": {
-                        "sirena": "\u0421\u0423",
-                        "iata": "SU",
-                        "icao": "AFL"
-                    }
-                },
-                "vehicle": "Airbus A320",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "SU-2874_260203_c26_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "00:30",
-            "arrival": null,
-            "days": "30, 31\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 3, 5, 10, 12, 17, 19, 24, 26\u00a0\u0444\u0435\u0432\u0440\u0430\u043b\u044f"
-        },
-        {
-            "thread": {
-                "number": "XC 9509",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0410\u043d\u0442\u0430\u043b\u044c\u044f",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0410\u043d\u0442\u0430\u043b\u044c\u044f",
-                "carrier": {
-                    "code": 60868,
-                    "title": "Corendon Airlines",
-                    "codes": {
-                        "sirena": null,
-                        "iata": "XC",
-                        "icao": "CAI"
-                    }
-                },
-                "vehicle": "Boeing 737-800",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "XC-9509_260425_c60868_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "00:30",
-            "arrival": null,
-            "days": "\u0441\u0431 \u0441 25.04 \u043f\u043e 29.08, \u043a\u0440\u043e\u043c\u0435 01.08"
-        },
-        {
-            "thread": {
-                "number": "FV 6449",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0422\u044e\u043c\u0435\u043d\u044c",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0422\u044e\u043c\u0435\u043d\u044c",
-                "carrier": {
-                    "code": 8565,
-                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
-                    "codes": {
-                        "sirena": "\u0424\u0412",
-                        "iata": "FV",
-                        "icao": null
-                    }
-                },
-                "vehicle": "Airbus A319",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "FV-6449_251223_c8565_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "00:30",
-            "arrival": null,
-            "days": "23, 29\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 6, 10\u00a0\u044f\u043d\u0432\u0430\u0440\u044f"
         },
         {
             "thread": {
@@ -1537,19 +1504,19 @@
         },
         {
             "thread": {
-                "number": "XC 9615",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0410\u043d\u0442\u0430\u043b\u044c\u044f",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0410\u043d\u0442\u0430\u043b\u044c\u044f",
+                "number": "FV 6449",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0422\u044e\u043c\u0435\u043d\u044c",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0422\u044e\u043c\u0435\u043d\u044c",
                 "carrier": {
-                    "code": 60868,
-                    "title": "Corendon Airlines",
+                    "code": 8565,
+                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
                     "codes": {
-                        "sirena": null,
-                        "iata": "XC",
-                        "icao": "CAI"
+                        "sirena": "\u0424\u0412",
+                        "iata": "FV",
+                        "icao": null
                     }
                 },
-                "vehicle": "Boeing 737-800",
+                "vehicle": "Airbus A319",
                 "transport_type": "plane",
                 "express_type": null,
                 "transport_subtype": {
@@ -1557,7 +1524,7 @@
                     "code": null,
                     "color": null
                 },
-                "uid": "XC-9615_260809_c60868_12"
+                "uid": "FV-6449_260106_c8565_12"
             },
             "terminal": "1",
             "is_fuzzy": false,
@@ -1566,7 +1533,7 @@
             "except_days": null,
             "departure": "00:30",
             "arrival": null,
-            "days": "\u0432\u0441 \u0441 05.04 \u043f\u043e 30.08, \u043a\u0440\u043e\u043c\u0435 02.08"
+            "days": "23, 29\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 6, 10\u00a0\u044f\u043d\u0432\u0430\u0440\u044f"
         },
         {
             "thread": {
@@ -1656,7 +1623,7 @@
                     "code": null,
                     "color": null
                 },
-                "uid": "FV-6001_260106_c8565_12"
+                "uid": "FV-6001_260303_c8565_12"
             },
             "terminal": "1",
             "is_fuzzy": false,
@@ -1669,19 +1636,19 @@
         },
         {
             "thread": {
-                "number": "FV 6829",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0413\u043e\u0440\u043d\u043e-\u0410\u043b\u0442\u0430\u0439\u0441\u043a",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0413\u043e\u0440\u043d\u043e-\u0410\u043b\u0442\u0430\u0439\u0441\u043a",
+                "number": "XC 9727",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0410\u043d\u0442\u0430\u043b\u044c\u044f",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0410\u043d\u0442\u0430\u043b\u044c\u044f",
                 "carrier": {
-                    "code": 8565,
-                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
+                    "code": 60868,
+                    "title": "Corendon Airlines",
                     "codes": {
-                        "sirena": "\u0424\u0412",
-                        "iata": "FV",
-                        "icao": null
+                        "sirena": null,
+                        "iata": "XC",
+                        "icao": "CAI"
                     }
                 },
-                "vehicle": "Airbus \u0410320",
+                "vehicle": "Boeing 737-800",
                 "transport_type": "plane",
                 "express_type": null,
                 "transport_subtype": {
@@ -1689,32 +1656,32 @@
                     "code": null,
                     "color": null
                 },
-                "uid": "FV-6829_260102_c8565_12"
+                "uid": "XC-9727_260429_c60868_12"
             },
             "terminal": "1",
             "is_fuzzy": false,
             "stops": "",
             "platform": "",
             "except_days": null,
-            "departure": "00:35",
+            "departure": "00:30",
             "arrival": null,
-            "days": "\u043f\u0442, \u0432\u0441 \u0441 02.01 \u043f\u043e 29.03, \u043a\u0440\u043e\u043c\u0435 04.01, 09.01, 11.01"
+            "days": "\u0441\u0440 \u0441 29.04 \u043f\u043e 26.08, \u043a\u0440\u043e\u043c\u0435 29.07"
         },
         {
             "thread": {
-                "number": "FV 6829",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0413\u043e\u0440\u043d\u043e-\u0410\u043b\u0442\u0430\u0439\u0441\u043a",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0413\u043e\u0440\u043d\u043e-\u0410\u043b\u0442\u0430\u0439\u0441\u043a",
+                "number": "N4 2307",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u043c\u0441\u043a",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u043c\u0441\u043a",
                 "carrier": {
-                    "code": 8565,
-                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
+                    "code": 2543,
+                    "title": "Nordwind",
                     "codes": {
-                        "sirena": "\u0424\u0412",
-                        "iata": "FV",
-                        "icao": null
+                        "sirena": "\u041a\u041b",
+                        "iata": "N4",
+                        "icao": "NWS"
                     }
                 },
-                "vehicle": "Airbus A320",
+                "vehicle": "Airbus \u0410330-200",
                 "transport_type": "plane",
                 "express_type": null,
                 "transport_subtype": {
@@ -1722,7 +1689,7 @@
                     "code": null,
                     "color": null
                 },
-                "uid": "FV-6829_251214_c8565_12"
+                "uid": "N4-2307_251229_c2543_12"
             },
             "terminal": "1",
             "is_fuzzy": false,
@@ -1731,7 +1698,7 @@
             "except_days": null,
             "departure": "00:35",
             "arrival": null,
-            "days": "14, 19, 21, 26, 28, 30\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 4, 9, 11\u00a0\u044f\u043d\u0432\u0430\u0440\u044f"
+            "days": "29\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f"
         },
         {
             "thread": {
@@ -1801,6 +1768,105 @@
         },
         {
             "thread": {
+                "number": "5N 4545",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0421\u043e\u0447\u0438",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0421\u043e\u0447\u0438",
+                "carrier": {
+                    "code": 80,
+                    "title": "Smartavia",
+                    "codes": {
+                        "sirena": "5\u041d",
+                        "iata": "5N",
+                        "icao": "AUL"
+                    }
+                },
+                "vehicle": "Boeing 737-800",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "5N-4545_260601_c80_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:35",
+            "arrival": null,
+            "days": "\u043f\u043d, \u043f\u0442, \u0441\u0431 \u0441 01.06 \u043f\u043e 28.09"
+        },
+        {
+            "thread": {
+                "number": "FV 6829",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0413\u043e\u0440\u043d\u043e-\u0410\u043b\u0442\u0430\u0439\u0441\u043a",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0413\u043e\u0440\u043d\u043e-\u0410\u043b\u0442\u0430\u0439\u0441\u043a",
+                "carrier": {
+                    "code": 8565,
+                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
+                    "codes": {
+                        "sirena": "\u0424\u0412",
+                        "iata": "FV",
+                        "icao": null
+                    }
+                },
+                "vehicle": "Airbus A320",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "FV-6829_251214_c8565_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:35",
+            "arrival": null,
+            "days": "14, 19, 21, 26, 28, 30\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 4, 9, 11\u00a0\u044f\u043d\u0432\u0430\u0440\u044f"
+        },
+        {
+            "thread": {
+                "number": "FV 6829",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0413\u043e\u0440\u043d\u043e-\u0410\u043b\u0442\u0430\u0439\u0441\u043a",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0413\u043e\u0440\u043d\u043e-\u0410\u043b\u0442\u0430\u0439\u0441\u043a",
+                "carrier": {
+                    "code": 8565,
+                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
+                    "codes": {
+                        "sirena": "\u0424\u0412",
+                        "iata": "FV",
+                        "icao": null
+                    }
+                },
+                "vehicle": "Airbus \u0410320",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "FV-6829_260116_c8565_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:35",
+            "arrival": null,
+            "days": "\u043f\u0442, \u0432\u0441 \u0441 02.01 \u043f\u043e 29.03, \u043a\u0440\u043e\u043c\u0435 04.01, 09.01, 11.01"
+        },
+        {
+            "thread": {
                 "number": "N4 255",
                 "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0423\u0444\u0430",
                 "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0423\u0444\u0430",
@@ -1821,7 +1887,7 @@
                     "code": null,
                     "color": null
                 },
-                "uid": "N4-255_251213_c2543_12"
+                "uid": "N4-255_260306_c2543_12"
             },
             "terminal": "1",
             "is_fuzzy": false,
@@ -1830,7 +1896,7 @@
             "except_days": null,
             "departure": "00:35",
             "arrival": null,
-            "days": "13, 15, 16, 17, 19, 20, 24, 26, 27, 29, 30, 31\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 2, 3, 5, 6, 7, 9, 10, 12\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, \u2026"
+            "days": "15, 16, 17, 19, 20, 24, 26, 27, 29, 30, 31\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 2, 3, 5, 6, 7, 9, 10, 12, 14\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, \u2026"
         },
         {
             "thread": {
@@ -1867,6 +1933,105 @@
         },
         {
             "thread": {
+                "number": "FV 6453",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u0440\u0435\u043d\u0431\u0443\u0440\u0433",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u0440\u0435\u043d\u0431\u0443\u0440\u0433",
+                "carrier": {
+                    "code": 8565,
+                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
+                    "codes": {
+                        "sirena": "\u0424\u0412",
+                        "iata": "FV",
+                        "icao": null
+                    }
+                },
+                "vehicle": "Airbus A319",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "FV-6453_251214_c8565_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:35",
+            "arrival": null,
+            "days": "14, 17, 19, 20, 21, 24, 25, 26, 27, 28\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 2, 3, 4, 8, 9, 11, 15, 16, 17, 18\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, \u2026"
+        },
+        {
+            "thread": {
+                "number": "FV 6453",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u0440\u0435\u043d\u0431\u0443\u0440\u0433",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u0440\u0435\u043d\u0431\u0443\u0440\u0433",
+                "carrier": {
+                    "code": 8565,
+                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
+                    "codes": {
+                        "sirena": "\u0424\u0412",
+                        "iata": "FV",
+                        "icao": null
+                    }
+                },
+                "vehicle": "\u0421\u0443\u0445\u043e\u0439 \u0421\u0443\u043f\u0435\u0440\u0434\u0436\u0435\u0442 100",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "FV-6453_260110_c8565_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:35",
+            "arrival": null,
+            "days": "10\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, 27, 28\u00a0\u0444\u0435\u0432\u0440\u0430\u043b\u044f, 1, 6, 7, 13, 14, 27\u00a0\u043c\u0430\u0440\u0442\u0430, 28\u00a0\u0430\u043f\u0440\u0435\u043b\u044f"
+        },
+        {
+            "thread": {
+                "number": "FV 6453",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u0440\u0435\u043d\u0431\u0443\u0440\u0433",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u0440\u0435\u043d\u0431\u0443\u0440\u0433",
+                "carrier": {
+                    "code": 8565,
+                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
+                    "codes": {
+                        "sirena": "\u0424\u0412",
+                        "iata": "FV",
+                        "icao": null
+                    }
+                },
+                "vehicle": "Airbus A320",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "FV-6453_251218_c8565_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:35",
+            "arrival": null,
+            "days": "18\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f"
+        },
+        {
+            "thread": {
                 "number": "N4 307",
                 "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u043c\u0441\u043a",
                 "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u043c\u0441\u043a",
@@ -1887,7 +2052,7 @@
                     "code": null,
                     "color": null
                 },
-                "uid": "N4-307_260104_c2543_12"
+                "uid": "N4-307_251214_c2543_12"
             },
             "terminal": "1",
             "is_fuzzy": false,
@@ -1966,171 +2131,6 @@
         },
         {
             "thread": {
-                "number": "FV 6453",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u0440\u0435\u043d\u0431\u0443\u0440\u0433",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u0440\u0435\u043d\u0431\u0443\u0440\u0433",
-                "carrier": {
-                    "code": 8565,
-                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
-                    "codes": {
-                        "sirena": "\u0424\u0412",
-                        "iata": "FV",
-                        "icao": null
-                    }
-                },
-                "vehicle": "Airbus A320",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "FV-6453_251218_c8565_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "00:35",
-            "arrival": null,
-            "days": "18\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f"
-        },
-        {
-            "thread": {
-                "number": "FV 6453",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u0440\u0435\u043d\u0431\u0443\u0440\u0433",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u0440\u0435\u043d\u0431\u0443\u0440\u0433",
-                "carrier": {
-                    "code": 8565,
-                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
-                    "codes": {
-                        "sirena": "\u0424\u0412",
-                        "iata": "FV",
-                        "icao": null
-                    }
-                },
-                "vehicle": "\u0421\u0443\u0445\u043e\u0439 \u0421\u0443\u043f\u0435\u0440\u0434\u0436\u0435\u0442 100",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "FV-6453_260227_c8565_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "00:35",
-            "arrival": null,
-            "days": "10\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, 27, 28\u00a0\u0444\u0435\u0432\u0440\u0430\u043b\u044f, 1, 6, 7, 13, 14, 27\u00a0\u043c\u0430\u0440\u0442\u0430, 28\u00a0\u0430\u043f\u0440\u0435\u043b\u044f"
-        },
-        {
-            "thread": {
-                "number": "FV 6453",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u0440\u0435\u043d\u0431\u0443\u0440\u0433",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u0440\u0435\u043d\u0431\u0443\u0440\u0433",
-                "carrier": {
-                    "code": 8565,
-                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
-                    "codes": {
-                        "sirena": "\u0424\u0412",
-                        "iata": "FV",
-                        "icao": null
-                    }
-                },
-                "vehicle": "Airbus A319",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "FV-6453_251213_c8565_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "00:35",
-            "arrival": null,
-            "days": "13, 14, 17, 19, 20, 21, 24, 25, 26, 27, 28\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 2, 3, 4, 8, 9, 11, 15, 16, 17\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, \u2026"
-        },
-        {
-            "thread": {
-                "number": "5N 4545",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0421\u043e\u0447\u0438",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0421\u043e\u0447\u0438",
-                "carrier": {
-                    "code": 80,
-                    "title": "Smartavia",
-                    "codes": {
-                        "sirena": "5\u041d",
-                        "iata": "5N",
-                        "icao": "AUL"
-                    }
-                },
-                "vehicle": "Boeing 737-800",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "5N-4545_260601_c80_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "00:35",
-            "arrival": null,
-            "days": "\u043f\u043d, \u043f\u0442, \u0441\u0431 \u0441 01.06 \u043f\u043e 28.09"
-        },
-        {
-            "thread": {
-                "number": "N4 2307",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u043c\u0441\u043a",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u043c\u0441\u043a",
-                "carrier": {
-                    "code": 2543,
-                    "title": "Nordwind",
-                    "codes": {
-                        "sirena": "\u041a\u041b",
-                        "iata": "N4",
-                        "icao": "NWS"
-                    }
-                },
-                "vehicle": "Airbus \u0410330-200",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "N4-2307_251229_c2543_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "00:35",
-            "arrival": null,
-            "days": "29\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f"
-        },
-        {
-            "thread": {
                 "number": "DP 1569",
                 "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041f\u0435\u0440\u043c\u044c",
                 "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041f\u0435\u0440\u043c\u044c",
@@ -2164,39 +2164,6 @@
         },
         {
             "thread": {
-                "number": "EO 269",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u0440\u0441\u043a",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u0440\u0441\u043a",
-                "carrier": {
-                    "code": 196,
-                    "title": "Ikar",
-                    "codes": {
-                        "sirena": "\u0415\u041e",
-                        "iata": "EO",
-                        "icao": "KAR"
-                    }
-                },
-                "vehicle": "Embraer 190",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "EO-269_251213_c196_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "00:45",
-            "arrival": null,
-            "days": "\u0432\u0442, \u0441\u0431 \u043f\u043e 28.03"
-        },
-        {
-            "thread": {
                 "number": "N4 2241",
                 "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a",
                 "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a",
@@ -2227,6 +2194,39 @@
             "departure": "00:45",
             "arrival": null,
             "days": "9\u00a0\u044f\u043d\u0432\u0430\u0440\u044f"
+        },
+        {
+            "thread": {
+                "number": "EO 269",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u0440\u0441\u043a",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u0440\u0441\u043a",
+                "carrier": {
+                    "code": 196,
+                    "title": "Ikar",
+                    "codes": {
+                        "sirena": "\u0415\u041e",
+                        "iata": "EO",
+                        "icao": "KAR"
+                    }
+                },
+                "vehicle": "Embraer 190",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "EO-269_251216_c196_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:45",
+            "arrival": null,
+            "days": "\u0432\u0442, \u0441\u0431 \u043f\u043e 28.03"
         },
         {
             "thread": {
@@ -2296,6 +2296,39 @@
         },
         {
             "thread": {
+                "number": "N4 2321",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041d\u043e\u0432\u043e\u043a\u0443\u0437\u043d\u0435\u0446\u043a",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041d\u043e\u0432\u043e\u043a\u0443\u0437\u043d\u0435\u0446\u043a",
+                "carrier": {
+                    "code": 2543,
+                    "title": "Nordwind",
+                    "codes": {
+                        "sirena": "\u041a\u041b",
+                        "iata": "N4",
+                        "icao": "NWS"
+                    }
+                },
+                "vehicle": "Boeing 737-800",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "N4-2321_251229_c2543_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "00:55",
+            "arrival": null,
+            "days": "29\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f"
+        },
+        {
+            "thread": {
                 "number": "N4 309",
                 "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0422\u043e\u043c\u0441\u043a",
                 "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0422\u043e\u043c\u0441\u043a",
@@ -2325,7 +2358,7 @@
             "except_days": null,
             "departure": "00:55",
             "arrival": null,
-            "days": "\u0441\u0431 \u0441 20.12 \u043f\u043e 28.03, \u043a\u0440\u043e\u043c\u0435 10.01"
+            "days": "\u0441\u0431 \u043f\u043e 28.03, \u043a\u0440\u043e\u043c\u0435 10.01"
         },
         {
             "thread": {
@@ -2382,7 +2415,7 @@
                     "code": null,
                     "color": null
                 },
-                "uid": "N4-307_251218_c2543_12"
+                "uid": "N4-307_260108_c2543_12"
             },
             "terminal": "1",
             "is_fuzzy": false,
@@ -2395,9 +2428,9 @@
         },
         {
             "thread": {
-                "number": "N4 2321",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041d\u043e\u0432\u043e\u043a\u0443\u0437\u043d\u0435\u0446\u043a",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041d\u043e\u0432\u043e\u043a\u0443\u0437\u043d\u0435\u0446\u043a",
+                "number": "N4 2309",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0422\u043e\u043c\u0441\u043a",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0422\u043e\u043c\u0441\u043a",
                 "carrier": {
                     "code": 2543,
                     "title": "Nordwind",
@@ -2415,16 +2448,16 @@
                     "code": null,
                     "color": null
                 },
-                "uid": "N4-2321_251229_c2543_12"
+                "uid": "N4-2309_251230_c2543_12"
             },
             "terminal": "1",
             "is_fuzzy": false,
             "stops": "",
             "platform": "",
             "except_days": null,
-            "departure": "00:55",
+            "departure": "01:00",
             "arrival": null,
-            "days": "29\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f"
+            "days": "30\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f"
         },
         {
             "thread": {
@@ -2494,39 +2527,6 @@
         },
         {
             "thread": {
-                "number": "FV 6369",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0422\u044e\u043c\u0435\u043d\u044c",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0422\u044e\u043c\u0435\u043d\u044c",
-                "carrier": {
-                    "code": 8565,
-                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
-                    "codes": {
-                        "sirena": "\u0424\u0412",
-                        "iata": "FV",
-                        "icao": null
-                    }
-                },
-                "vehicle": "Airbus A319",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "FV-6369_251231_c8565_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "01:00",
-            "arrival": null,
-            "days": "31\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f"
-        },
-        {
-            "thread": {
                 "number": "SU 790",
                 "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0410\u043d\u0442\u0430\u043b\u044c\u044f",
                 "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0410\u043d\u0442\u0430\u043b\u044c\u044f",
@@ -2560,9 +2560,75 @@
         },
         {
             "thread": {
-                "number": "N4 2309",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0422\u043e\u043c\u0441\u043a",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0422\u043e\u043c\u0441\u043a",
+                "number": "FV 6369",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0422\u044e\u043c\u0435\u043d\u044c",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0422\u044e\u043c\u0435\u043d\u044c",
+                "carrier": {
+                    "code": 8565,
+                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
+                    "codes": {
+                        "sirena": "\u0424\u0412",
+                        "iata": "FV",
+                        "icao": null
+                    }
+                },
+                "vehicle": "Airbus A319",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "FV-6369_251231_c8565_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "01:00",
+            "arrival": null,
+            "days": "31\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f"
+        },
+        {
+            "thread": {
+                "number": "EO 6503",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041c\u043e\u0441\u043a\u0432\u0430",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041c\u043e\u0441\u043a\u0432\u0430",
+                "carrier": {
+                    "code": 196,
+                    "title": "Ikar",
+                    "codes": {
+                        "sirena": "\u0415\u041e",
+                        "iata": "EO",
+                        "icao": "KAR"
+                    }
+                },
+                "vehicle": "Boeing 777-200",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "EO-6503_260105_c196_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "01:05",
+            "arrival": null,
+            "days": "5\u00a0\u044f\u043d\u0432\u0430\u0440\u044f"
+        },
+        {
+            "thread": {
+                "number": "N4 2321",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041d\u043e\u0432\u043e\u043a\u0443\u0437\u043d\u0435\u0446\u043a",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041d\u043e\u0432\u043e\u043a\u0443\u0437\u043d\u0435\u0446\u043a",
                 "carrier": {
                     "code": 2543,
                     "title": "Nordwind",
@@ -2580,16 +2646,16 @@
                     "code": null,
                     "color": null
                 },
-                "uid": "N4-2309_251230_c2543_12"
+                "uid": "N4-2321_260112_c2543_12"
             },
             "terminal": "1",
             "is_fuzzy": false,
             "stops": "",
             "platform": "",
             "except_days": null,
-            "departure": "01:00",
+            "departure": "01:05",
             "arrival": null,
-            "days": "30\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f"
+            "days": "12\u00a0\u044f\u043d\u0432\u0430\u0440\u044f"
         },
         {
             "thread": {
@@ -2692,6 +2758,72 @@
         },
         {
             "thread": {
+                "number": "N4 307",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u043c\u0441\u043a",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u043c\u0441\u043a",
+                "carrier": {
+                    "code": 2543,
+                    "title": "Nordwind",
+                    "codes": {
+                        "sirena": "\u041a\u041b",
+                        "iata": "N4",
+                        "icao": "NWS"
+                    }
+                },
+                "vehicle": "Boeing 737-800",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "N4-307_251219_c2543_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "01:05",
+            "arrival": null,
+            "days": "19, 20, 26, 27\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 2, 3, 10, 16, 17, 23, 24, 30, 31\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, 6, 7, 13, 14, 20, 21, 27\u00a0\u0444\u0435\u0432\u0440\u0430\u043b\u044f, \u2026"
+        },
+        {
+            "thread": {
+                "number": "N4 307",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u043c\u0441\u043a",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u043c\u0441\u043a",
+                "carrier": {
+                    "code": 2543,
+                    "title": "Nordwind",
+                    "codes": {
+                        "sirena": "\u041a\u041b",
+                        "iata": "N4",
+                        "icao": "NWS"
+                    }
+                },
+                "vehicle": "Airbus \u0410321",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "N4-307_251217_c2543_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "01:05",
+            "arrival": null,
+            "days": "\u0441\u0440 \u043f\u043e 25.02"
+        },
+        {
+            "thread": {
                 "number": "SU 786",
                 "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0410\u043d\u0442\u0430\u043b\u044c\u044f",
                 "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0410\u043d\u0442\u0430\u043b\u044c\u044f",
@@ -2755,138 +2887,6 @@
             "departure": "01:05",
             "arrival": null,
             "days": "9\u00a0\u044f\u043d\u0432\u0430\u0440\u044f"
-        },
-        {
-            "thread": {
-                "number": "EO 6503",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041c\u043e\u0441\u043a\u0432\u0430",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041c\u043e\u0441\u043a\u0432\u0430",
-                "carrier": {
-                    "code": 196,
-                    "title": "Ikar",
-                    "codes": {
-                        "sirena": "\u0415\u041e",
-                        "iata": "EO",
-                        "icao": "KAR"
-                    }
-                },
-                "vehicle": "Boeing 777-200",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "EO-6503_260105_c196_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "01:05",
-            "arrival": null,
-            "days": "5\u00a0\u044f\u043d\u0432\u0430\u0440\u044f"
-        },
-        {
-            "thread": {
-                "number": "N4 307",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u043c\u0441\u043a",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u043c\u0441\u043a",
-                "carrier": {
-                    "code": 2543,
-                    "title": "Nordwind",
-                    "codes": {
-                        "sirena": "\u041a\u041b",
-                        "iata": "N4",
-                        "icao": "NWS"
-                    }
-                },
-                "vehicle": "Airbus \u0410321",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "N4-307_251217_c2543_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "01:05",
-            "arrival": null,
-            "days": "\u0441\u0440 \u043f\u043e 25.02"
-        },
-        {
-            "thread": {
-                "number": "N4 307",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u043c\u0441\u043a",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u043c\u0441\u043a",
-                "carrier": {
-                    "code": 2543,
-                    "title": "Nordwind",
-                    "codes": {
-                        "sirena": "\u041a\u041b",
-                        "iata": "N4",
-                        "icao": "NWS"
-                    }
-                },
-                "vehicle": "Boeing 737-800",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "N4-307_251213_c2543_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "01:05",
-            "arrival": null,
-            "days": "13, 19, 20, 26, 27\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 2, 3, 10, 16, 17, 23, 24, 30, 31\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, 6, 7, 13, 14, 20, 21\u00a0\u0444\u0435\u0432\u0440\u0430\u043b\u044f, \u2026"
-        },
-        {
-            "thread": {
-                "number": "N4 2321",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041d\u043e\u0432\u043e\u043a\u0443\u0437\u043d\u0435\u0446\u043a",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041d\u043e\u0432\u043e\u043a\u0443\u0437\u043d\u0435\u0446\u043a",
-                "carrier": {
-                    "code": 2543,
-                    "title": "Nordwind",
-                    "codes": {
-                        "sirena": "\u041a\u041b",
-                        "iata": "N4",
-                        "icao": "NWS"
-                    }
-                },
-                "vehicle": "Boeing 737-800",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "N4-2321_260112_c2543_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "01:05",
-            "arrival": null,
-            "days": "12\u00a0\u044f\u043d\u0432\u0430\u0440\u044f"
         },
         {
             "thread": {
@@ -3001,6 +3001,39 @@
                         "icao": null
                     }
                 },
+                "vehicle": "Airbus A319",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "FV-6581_251214_c8565_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "01:10",
+            "arrival": null,
+            "days": "14, 15, 16, 17, 18, 21, 22, 24, 27\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 7, 8, 19, 20, 22, 26, 29\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, 4, 5, 6, 8\u00a0\u0444\u0435\u0432\u0440\u0430\u043b\u044f, \u2026"
+        },
+        {
+            "thread": {
+                "number": "FV 6581",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041f\u0435\u0440\u043c\u044c",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041f\u0435\u0440\u043c\u044c",
+                "carrier": {
+                    "code": 8565,
+                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
+                    "codes": {
+                        "sirena": "\u0424\u0412",
+                        "iata": "FV",
+                        "icao": null
+                    }
+                },
                 "vehicle": "Airbus \u0410320",
                 "transport_type": "plane",
                 "express_type": null,
@@ -3009,7 +3042,7 @@
                     "code": null,
                     "color": null
                 },
-                "uid": "FV-6581_260109_c8565_12"
+                "uid": "FV-6581_251229_c8565_12"
             },
             "terminal": "1",
             "is_fuzzy": false,
@@ -3034,39 +3067,6 @@
                         "icao": null
                     }
                 },
-                "vehicle": "Airbus A319",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "FV-6581_251213_c8565_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "01:10",
-            "arrival": null,
-            "days": "13, 14, 15, 16, 17, 18, 21, 22, 24, 27\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 7, 8, 19, 20, 22, 26, 29\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, 4, 5, 6\u00a0\u0444\u0435\u0432\u0440\u0430\u043b\u044f, \u2026"
-        },
-        {
-            "thread": {
-                "number": "FV 6581",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041f\u0435\u0440\u043c\u044c",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041f\u0435\u0440\u043c\u044c",
-                "carrier": {
-                    "code": 8565,
-                    "title": "\u0420\u043e\u0441\u0441\u0438\u044f",
-                    "codes": {
-                        "sirena": "\u0424\u0412",
-                        "iata": "FV",
-                        "icao": null
-                    }
-                },
                 "vehicle": "\u0421\u0443\u0445\u043e\u0439 \u0421\u0443\u043f\u0435\u0440\u0434\u0436\u0435\u0442 100",
                 "transport_type": "plane",
                 "express_type": null,
@@ -3075,7 +3075,7 @@
                     "code": null,
                     "color": null
                 },
-                "uid": "FV-6581_260220_c8565_12"
+                "uid": "FV-6581_260102_c8565_12"
             },
             "terminal": "1",
             "is_fuzzy": false,
@@ -3085,72 +3085,6 @@
             "departure": "01:10",
             "arrival": null,
             "days": "23, 25, 26, 30\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 2, 3, 6, 10, 13, 14, 15, 16, 17, 18, 21, 23, 24, 25, 27, 28\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, \u2026"
-        },
-        {
-            "thread": {
-                "number": "EO 2269",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u0440\u0441\u043a",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u0440\u0441\u043a",
-                "carrier": {
-                    "code": 196,
-                    "title": "Ikar",
-                    "codes": {
-                        "sirena": "\u0415\u041e",
-                        "iata": "EO",
-                        "icao": "KAR"
-                    }
-                },
-                "vehicle": "Embraer 190",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "EO-2269_260108_c196_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "01:15",
-            "arrival": null,
-            "days": "8\u00a0\u044f\u043d\u0432\u0430\u0440\u044f"
-        },
-        {
-            "thread": {
-                "number": "N4 255",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0423\u0444\u0430",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0423\u0444\u0430",
-                "carrier": {
-                    "code": 2543,
-                    "title": "Nordwind",
-                    "codes": {
-                        "sirena": "\u041a\u041b",
-                        "iata": "N4",
-                        "icao": "NWS"
-                    }
-                },
-                "vehicle": "Boeing 737-800",
-                "transport_type": "plane",
-                "express_type": null,
-                "transport_subtype": {
-                    "title": null,
-                    "code": null,
-                    "color": null
-                },
-                "uid": "N4-255_260113_c2543_12"
-            },
-            "terminal": "1",
-            "is_fuzzy": false,
-            "stops": "",
-            "platform": "",
-            "except_days": null,
-            "departure": "01:15",
-            "arrival": null,
-            "days": "\u0432\u0441 \u043f\u043e 29.03, \u0430\u00a0\u0435\u0449\u0451 13.01"
         },
         {
             "thread": {
@@ -3187,9 +3121,9 @@
         },
         {
             "thread": {
-                "number": "N4 2241",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a",
+                "number": "N4 255",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0423\u0444\u0430",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0423\u0444\u0430",
                 "carrier": {
                     "code": 2543,
                     "title": "Nordwind",
@@ -3207,16 +3141,82 @@
                     "code": null,
                     "color": null
                 },
-                "uid": "N4-2241_260107_c2543_12"
+                "uid": "N4-255_251214_c2543_12"
             },
             "terminal": "1",
             "is_fuzzy": false,
             "stops": "",
             "platform": "",
             "except_days": null,
+            "departure": "01:15",
+            "arrival": null,
+            "days": "\u0432\u0441 \u043f\u043e 29.03, \u0430\u00a0\u0435\u0449\u0451 13.01"
+        },
+        {
+            "thread": {
+                "number": "EO 2269",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u0440\u0441\u043a",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u041e\u0440\u0441\u043a",
+                "carrier": {
+                    "code": 196,
+                    "title": "Ikar",
+                    "codes": {
+                        "sirena": "\u0415\u041e",
+                        "iata": "EO",
+                        "icao": "KAR"
+                    }
+                },
+                "vehicle": "Embraer 190",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "EO-2269_260108_c196_12"
+            },
+            "terminal": "1",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
+            "departure": "01:15",
+            "arrival": null,
+            "days": "8\u00a0\u044f\u043d\u0432\u0430\u0440\u044f"
+        },
+        {
+            "thread": {
+                "number": "NE 641",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0425\u0443\u0440\u0433\u0430\u0434\u0430",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0425\u0443\u0440\u0433\u0430\u0434\u0430",
+                "carrier": {
+                    "code": 9810,
+                    "title": "Nesma Airlines",
+                    "codes": {
+                        "sirena": null,
+                        "iata": "NE",
+                        "icao": "NSS"
+                    }
+                },
+                "vehicle": "Airbus \u0410320",
+                "transport_type": "plane",
+                "express_type": null,
+                "transport_subtype": {
+                    "title": null,
+                    "code": null,
+                    "color": null
+                },
+                "uid": "NE-641_251224_c9810_12"
+            },
+            "terminal": "0",
+            "is_fuzzy": false,
+            "stops": "",
+            "platform": "",
+            "except_days": null,
             "departure": "01:25",
             "arrival": null,
-            "days": "7\u00a0\u044f\u043d\u0432\u0430\u0440\u044f"
+            "days": "24\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 3, 14\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, 7, 18, 28\u00a0\u043c\u0430\u0440\u0442\u0430"
         },
         {
             "thread": {
@@ -3253,19 +3253,19 @@
         },
         {
             "thread": {
-                "number": "NE 641",
-                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0425\u0443\u0440\u0433\u0430\u0434\u0430",
-                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0425\u0443\u0440\u0433\u0430\u0434\u0430",
+                "number": "N4 2241",
+                "title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a",
+                "short_title": "\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433 \u2014 \u0427\u0435\u043b\u044f\u0431\u0438\u043d\u0441\u043a",
                 "carrier": {
-                    "code": 9810,
-                    "title": "Nesma Airlines",
+                    "code": 2543,
+                    "title": "Nordwind",
                     "codes": {
-                        "sirena": null,
-                        "iata": "NE",
-                        "icao": "NSS"
+                        "sirena": "\u041a\u041b",
+                        "iata": "N4",
+                        "icao": "NWS"
                     }
                 },
-                "vehicle": "Airbus \u0410320",
+                "vehicle": "Boeing 737-800",
                 "transport_type": "plane",
                 "express_type": null,
                 "transport_subtype": {
@@ -3273,16 +3273,16 @@
                     "code": null,
                     "color": null
                 },
-                "uid": "NE-641_251213_c9810_12"
+                "uid": "N4-2241_260107_c2543_12"
             },
-            "terminal": "0",
+            "terminal": "1",
             "is_fuzzy": false,
             "stops": "",
             "platform": "",
             "except_days": null,
             "departure": "01:25",
             "arrival": null,
-            "days": "13, 24\u00a0\u0434\u0435\u043a\u0430\u0431\u0440\u044f, 3, 14\u00a0\u044f\u043d\u0432\u0430\u0440\u044f, 7, 18, 28\u00a0\u043c\u0430\u0440\u0442\u0430"
+            "days": "7\u00a0\u044f\u043d\u0432\u0430\u0440\u044f"
         },
         {
             "thread": {

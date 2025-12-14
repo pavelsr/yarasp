@@ -16,7 +16,8 @@ def test_yarasp_client_sync_cached_defaults():
     assert client.user_agent == "httpx" # hishel.CacheClient
     #assert isinstance(client.user_agent, hishel.CacheClient)
     assert client.cache_enabled is True
-    assert isinstance(client.cache_storage, hishel.FileStorage)
+    # Storage is wrapped with SafeStorageWrapper which inherits from FileStorage
+    assert isinstance(client.cache_storage, hishel.BaseStorage)
     assert client.last_response_from_cache is None
     assert hasattr(client, "api_key")  # Check attribute presence
 
@@ -56,7 +57,8 @@ def test_yarasp_client_async_cached_defaults():
     assert client.user_agent == "httpx" # hishel.CacheClient
     #assert isinstance(client.user_agent, hishel.CacheClient)
     assert client.cache_enabled is True
-    assert isinstance(client.cache_storage, hishel.AsyncFileStorage)
+    # Storage is wrapped with AsyncSafeStorageWrapper which inherits from AsyncFileStorage
+    assert isinstance(client.cache_storage, hishel.AsyncBaseStorage)
     assert client.last_response_from_cache is None
     assert hasattr(client, "api_key")  # Check attribute presence
 

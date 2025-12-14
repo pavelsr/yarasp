@@ -4,7 +4,7 @@ This document provides context for AI coding assistants (Claude Code, Gemini CLI
 
 ## Project overview
 
-This repository contains a Python module for accessing the Yandex Schedule API. The module provides both synchronous and asynchronous clients with HTTP caching, API key usage tracking, and automatic pagination support.
+This repository contains a Python module for accessing the Yandex Schedule API. The module provides both synchronous and asynchronous clients with HTTP caching, API key usage tracking, and automatic pagination support. HTTP caching is implemented securely: sensitive parameters like API keys are excluded from cache keys to prevent sensitive data from being stored in the cache.
 
 **Primary goal:** Implement changes safely without breaking public API.
 
@@ -44,6 +44,8 @@ yarasp/
 
 ## Build and test commands
 
+**Important:** This project uses `uv` for dependency management. **Always use `uv run python` (or `uv run pytest`, `uv run ruff`, etc.) instead of direct `python` commands** to ensure correct virtual environment and dependencies are used.
+
 ### Build
 
 ```bash
@@ -58,27 +60,27 @@ uv build
 
 ```bash
 # Run all tests
-pytest -q
+uv run pytest -q
 
 # Run tests with coverage
-coverage run --source yarasp -m pytest
-coverage report -m
+uv run coverage run --source yarasp -m pytest
+uv run coverage report -m
 
 # Run specific test file
-pytest tests/test_03_pagination.py
+uv run pytest tests/test_03_pagination.py
 ```
 
 ### Linting and formatting
 
 ```bash
 # Check code style
-ruff check .
+uv run ruff check .
 
 # Format code
-ruff format .
+uv run ruff format .
 
 # Type checking
-mypy .
+uv run mypy .
 ```
 
 ### Documentation
@@ -228,17 +230,17 @@ JSON fixtures are stored in `tests/fixtures/` and represent real API responses f
 
 ```bash
 # Quick test run
-pytest -q
+uv run pytest -q
 
 # Verbose output
-pytest -v
+uv run pytest -v
 
 # Run specific test
-pytest tests/test_02_cache.py
+uv run pytest tests/test_02_cache.py
 
 # Run with coverage
-coverage run --source yarasp -m pytest
-coverage report -m
+uv run coverage run --source yarasp -m pytest
+uv run coverage report -m
 ```
 
 ### Test requirements
@@ -249,6 +251,58 @@ coverage report -m
 - Verify cache behavior (responses from cache vs live requests)
 - Test pagination for endpoints that support it
 - Verify API key usage counter increments only for live requests
+
+### Test stability and contract testing
+
+**Tests must be resilient to API changes by validating contracts, not data content.**
+
+When writing tests for API responses:
+
+**DO validate:**
+- **Types**: Ensure response fields have correct types (str, int, dict, list, None, etc.)
+- **Structure**: Verify required fields exist and have expected structure (nested objects, arrays)
+- **Key fields**: Check presence and type of critical fields that define the contract
+- **Field relationships**: Validate logical relationships between fields (e.g., if `page` exists, `per_page` should exist)
+
+**DO NOT validate:**
+- **Exact data values**: Do not assert specific content values that may change over time
+- **Complete response content**: Do not compare entire response dictionaries or JSON strings
+- **`pagination.total` value**: Never assert the exact value of `pagination.total` field, as the total count can change at any time due to API data updates
+- **Dynamic content**: Avoid checking timestamps, IDs, or other values that vary between API calls
+
+**Examples:**
+
+```python
+# ✅ GOOD: Validates contract (types, structure, key fields)
+def test_schedule_response_structure(response):
+    assert isinstance(response, dict)
+    assert "schedule" in response
+    assert isinstance(response["schedule"], list)
+    if response["schedule"]:
+        assert "thread" in response["schedule"][0]
+        assert isinstance(response["schedule"][0]["thread"], dict)
+
+# ✅ GOOD: Validates pagination structure without checking total
+def test_pagination_structure(response):
+    assert "pagination" in response
+    assert isinstance(response["pagination"], dict)
+    assert "page" in response["pagination"]
+    assert "per_page" in response["pagination"]
+    assert isinstance(response["pagination"]["page"], int)
+    # Do NOT check pagination["total"] value
+
+# ❌ BAD: Validates exact data content
+def test_schedule_response_content(response):
+    assert response["schedule"][0]["thread"]["title"] == "Specific Train Name"
+    assert response["pagination"]["total"] == 42  # Will break when API data changes
+
+# ❌ BAD: Compares complete response
+def test_schedule_response(response):
+    expected = load_fixture("schedule_result.json")
+    assert response == expected  # Too brittle, breaks on any API change
+```
+
+This approach ensures tests remain stable when the API adds new fields, updates content, or changes dynamic values, while still catching breaking changes to the response contract.
 
 ## Security considerations
 
@@ -295,6 +349,7 @@ When `safe_mode=True` (default), the client will raise `RuntimeError` if the dai
 ## Repository expectations (always)
 
 - Follow existing project conventions (structure, naming, formatting)
+- **Always use `uv run python` (or `uv run pytest`, `uv run ruff`, etc.) for all Python commands** - never use direct `python`, `python3`, `pytest`, etc.
 - Do not introduce new production dependencies without an explicit request
 - If behavior changes, update tests and docs
 - Maintain backward compatibility with public API unless explicitly breaking changes are required
@@ -304,9 +359,9 @@ When `safe_mode=True` (default), the client will raise `RuntimeError` if the dai
 
 Before considering a task complete:
 
-- ✅ All tests pass: `pytest -q`
-- ✅ Lint/format pass: `ruff check .` and `ruff format .`
-- ✅ Type checking passes: `mypy .`
+- ✅ All tests pass: `uv run pytest -q`
+- ✅ Lint/format pass: `uv run ruff check .` and `uv run ruff format .`
+- ✅ Type checking passes: `uv run mypy .`
 - ✅ Public API remains compatible unless the task explicitly says otherwise
 - ✅ Documentation updated if behavior or API changed
 - ✅ No new linter warnings or errors introduced
