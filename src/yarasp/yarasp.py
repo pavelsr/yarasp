@@ -65,7 +65,7 @@ class _YaraspClientBase:
     cache_enabled: bool = True
     cache_storage: Optional["CacheStorageType"] = None
     last_response_from_cache: bool = field(init=False, default=None)
-    api_key: str = field(init=False, default=YARASP_API_KEY, repr=False)
+    api_key: str = field(init=False, default_factory=lambda: os.environ.get('YARASP_API_KEY') or YARASP_API_KEY, repr=False)
 
     #print("Self anfter init: ", self)
 
@@ -145,7 +145,12 @@ class _YaraspClientBase:
                 return cache_key
             
             import httpcore
-            controller = hishel.Controller(key_generator=custom_key_generator, cache_private=False)
+            controller = hishel.Controller(
+                key_generator=custom_key_generator, 
+                cache_private=False,
+                force_cache=True,
+                cacheable_status_codes=[200, 201, 202, 203, 204, 205, 206, 300, 301, 302, 303, 304, 305, 306, 307, 308]
+            )
             client_cls = hishel.AsyncCacheClient if async_mode else hishel.CacheClient
             self.http_client = client_cls(storage=self.cache_storage, controller=controller, headers=ua_header)
         else:
@@ -220,14 +225,14 @@ class _YaraspClientBase:
         try:
             return response.json()
         except Exception:
-            return {"error": "Failed to decode JSON", "raw": response.text()}
+            return {"error": "Failed to decode JSON", "raw": response.text}
 
     async def _parse_json_response_async(self, response):
         """Asynchronous JSON response handler."""
         try:
-            return response.json()
+            return await response.json()
         except Exception:
-            return {"error": "Failed to decode JSON", "raw": response.text()}
+            return {"error": "Failed to decode JSON", "raw": response.text}
 
     # Pagination in API looks like this:
     # {

@@ -53,6 +53,16 @@ module = "tests.*"
 allow_untyped_defs = true
 disable_error_code = "attr-defined"
 
+# Pytest
+# ------
+
+[tool.pytest.ini_options]
+markers = [
+    "stations_list: marks test for stations_list endpoint",
+    "schedule: marks test for schedule endpoint",
+    "carrier: marks test for carrier endpoint",
+]
+
 [dependency-groups]
 dev = [
     "coverage",
@@ -62,6 +72,7 @@ dev = [
     "mypy",
     "pytest",
     "pytest-httpx>=0.35.0",
+    "redis>=7.0.1",
     "ruff",
 ]
 
