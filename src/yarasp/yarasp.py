@@ -19,6 +19,7 @@ Environment variables:
     YARASP_API_KEY          – API key (required)
     YARASP_API_DAILY_LIMIT  – daily request limit (default: 500)
     YARASP_SAFE_MODE        – safe mode (enabled by default)
+    YARASP_VERBOSE          – verbose logging (disabled by default)
 """
 
 import os
@@ -47,6 +48,9 @@ except ValueError:
 _yarasp_safe_mode = os.environ.get('YARASP_SAFE_MODE', '1')
 YARASP_SAFE_MODE = not (_yarasp_safe_mode.lower() in ['0', 'false'])
 
+_yarasp_verbose = os.environ.get('YARASP_VERBOSE', '0')
+YARASP_VERBOSE = _yarasp_verbose.lower() in ['1', 'true', 'yes']
+
 
 ###############################################################################
 # Common base class
@@ -55,7 +59,7 @@ YARASP_SAFE_MODE = not (_yarasp_safe_mode.lower() in ['0', 'false'])
 class _YaraspClientBase:
     base_url: str = "https://api.rasp.yandex.net/v3.0"
     ignore_params: Set[str] = field(default_factory=lambda: {'apikey'})
-    verbose: bool = False
+    verbose: bool = YARASP_VERBOSE
     safe_mode: bool = YARASP_SAFE_MODE
     daily_limit: int = YARASP_API_DAILY_LIMIT
     counter_backend: str = "json"  # or "redis"
@@ -66,6 +70,7 @@ class _YaraspClientBase:
     cache_storage: Optional["CacheStorageType"] = None
     last_response_from_cache: bool = field(init=False, default=None)
     api_key: str = field(init=False, default_factory=lambda: os.environ.get('YARASP_API_KEY') or YARASP_API_KEY, repr=False)
+    _in_pagination: bool = field(init=False, default=False)
 
     #print("Self anfter init: ", self)
 
@@ -192,11 +197,24 @@ class _YaraspClientBase:
         self.usage_counter.increment()
 
 
-    def _log_and_check_limits(self, response):
-        """Request logging and limit checking."""
-        self.last_response_from_cache = response.extensions["from_cache"]
+    def _log_and_check_limits(self, response, skip_counter=False):
+        """Request logging and limit checking.
+        
+        Args:
+            response: HTTP response object
+            skip_counter: If True, skip counter increment (used internally for pagination tracking)
+        """
+        # Safely get from_cache flag - it may not be set if request was mocked
+        # Default to None if not set, which we'll treat as "unknown" (likely mocked)
+        self.last_response_from_cache = response.extensions.get("from_cache")
         self._log_response_verbose(response)
-        if not self.last_response_from_cache:
+        # Only increment counter if response is explicitly NOT from cache
+        # (from_cache is False, meaning it was a real API request)
+        # If from_cache is None, it's likely a mocked request, so don't count it
+        # If from_cache is True, it's from cache, so don't count it
+        # skip_counter is used internally to track pagination requests separately
+        # Also skip if we're in pagination mode (counter will be handled in _get_paginated_results)
+        if not skip_counter and not self._in_pagination and self.last_response_from_cache is False:
             self._check_daily_limit()
             self._increment_usage()
 
@@ -254,10 +272,17 @@ class _YaraspClientBase:
         #    raise RuntimeError("Environment variable YARASP_API_KEY is not set!")
         
         async def _async_mode():
+            # Set pagination flag to skip counter increments in _log_and_check_limits
+            self._in_pagination = True
             aggregated = []
             params["limit"] = limit
             params["offset"] = 0
+            # Track if any request was a real API call (not from cache)
+            any_real_request = False
             data = await get_page(params)
+            # Check if first request was real (not from cache)
+            if self.last_response_from_cache is False:
+                any_real_request = True
 
             if result_key:
                 aggregated.extend(data.get(result_key, []))
@@ -272,19 +297,38 @@ class _YaraspClientBase:
                 offset += limit
                 params["offset"] = offset
                 page_data = await get_page(params)
+                # Check if this request was real (not from cache)
+                if self.last_response_from_cache is False:
+                    any_real_request = True
 
                 if result_key:
                     aggregated.extend(page_data.get(result_key, []))
                 else:
                     aggregated.append(page_data)
 
+            # Only increment counter once if any request was real
+            if any_real_request:
+                self._check_daily_limit()
+                self._increment_usage()
+            # Set last_response_from_cache based on whether all were from cache
+            self.last_response_from_cache = not any_real_request
+            # Reset pagination flag
+            self._in_pagination = False
+
             return aggregated
 
         def _sync_mode():
+            # Set pagination flag to skip counter increments in _log_and_check_limits
+            self._in_pagination = True
             aggregated = []
             params["limit"] = limit
             params["offset"] = 0
+            # Track if any request was a real API call (not from cache)
+            any_real_request = False
             data = get_page(params)
+            # Check if first request was real (not from cache)
+            if self.last_response_from_cache is False:
+                any_real_request = True
 
             if result_key:
                 aggregated.extend(data.get(result_key, []))
@@ -299,11 +343,23 @@ class _YaraspClientBase:
                 offset += limit
                 params["offset"] = offset
                 page_data = get_page(params)
+                # Check if this request was real (not from cache)
+                if self.last_response_from_cache is False:
+                    any_real_request = True
 
                 if result_key:
                     aggregated.extend(page_data.get(result_key, []))
                 else:
                     aggregated.append(page_data)
+
+            # Only increment counter once if any request was real
+            if any_real_request:
+                self._check_daily_limit()
+                self._increment_usage()
+            # Set last_response_from_cache based on whether all were from cache
+            self.last_response_from_cache = not any_real_request
+            # Reset pagination flag
+            self._in_pagination = False
 
             return aggregated
 
@@ -313,8 +369,9 @@ class _YaraspClientBase:
     def is_from_cache(self) -> bool:
         """
         Returns True if the last response was retrieved from cache.
+        Returns False if response was not from cache or cache status is unknown.
         """
-        return self.last_response_from_cache
+        return self.last_response_from_cache is True
     
     @classmethod
     def _get_endpoints_config(cls):
