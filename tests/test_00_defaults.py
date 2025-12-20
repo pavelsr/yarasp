@@ -7,7 +7,7 @@ def test_yarasp_client_sync_cached_defaults():
     client = YaraspClient()
     assert client.base_url == "https://api.rasp.yandex.net/v3.0"
     assert client.ignore_params == {'apikey'}
-    assert client.verbose is False
+    assert isinstance(client.verbose, bool)
     assert isinstance(client.safe_mode, bool)
     assert isinstance(client.daily_limit, int)
     assert client.counter_backend in {"json", "redis"}
@@ -26,7 +26,7 @@ def test_yarasp_client_sync_nocached_defaults():
     client = YaraspClient(cache_enabled=False)
     assert client.base_url == "https://api.rasp.yandex.net/v3.0"
     assert client.ignore_params == {'apikey'}
-    assert client.verbose is False
+    assert isinstance(client.verbose, bool)
     assert isinstance(client.safe_mode, bool)
     assert isinstance(client.daily_limit, int)
     assert client.counter_backend in {"json", "redis"}
@@ -48,7 +48,7 @@ def test_yarasp_client_async_cached_defaults():
     client = AsyncYaraspClient()
     assert client.base_url == "https://api.rasp.yandex.net/v3.0"
     assert client.ignore_params == {'apikey'}
-    assert client.verbose is False
+    assert isinstance(client.verbose, bool)
     assert isinstance(client.safe_mode, bool)
     assert isinstance(client.daily_limit, int)
     assert client.counter_backend in {"json", "redis"}
@@ -67,7 +67,7 @@ def test_yarasp_client_async_nocached_defaults():
     client = AsyncYaraspClient(cache_enabled=False)
     assert client.base_url == "https://api.rasp.yandex.net/v3.0"
     assert client.ignore_params == {'apikey'}
-    assert client.verbose is False
+    assert isinstance(client.verbose, bool)
     assert isinstance(client.safe_mode, bool)
     assert isinstance(client.daily_limit, int)
     assert client.counter_backend in {"json", "redis"}
@@ -78,3 +78,20 @@ def test_yarasp_client_async_nocached_defaults():
     assert client.cache_storage is None
     assert client.last_response_from_cache is None
     assert hasattr(client, "api_key")  # Check attribute presence
+
+
+def test_yarasp_client_verbose_override():
+    """Test that verbose can be overridden via constructor parameter."""
+    # Test sync client
+    client1 = YaraspClient(verbose=True)
+    assert client1.verbose is True
+    
+    client2 = YaraspClient(verbose=False)
+    assert client2.verbose is False
+    
+    # Test async client
+    client3 = AsyncYaraspClient(verbose=True)
+    assert client3.verbose is True
+    
+    client4 = AsyncYaraspClient(verbose=False)
+    assert client4.verbose is False

@@ -196,6 +196,36 @@ class _YaraspClientBase:
     def _increment_usage(self):
         self.usage_counter.increment()
 
+    def _has_valid_apikey(self, response):
+        """Check if request has a valid (non-empty) API key.
+        
+        Args:
+            response: HTTP response object
+            
+        Returns:
+            bool: True if API key is present and non-empty, False otherwise
+        """
+        # First check self.api_key (the key used in _prepare_params)
+        # Handle None, empty string, and whitespace-only strings
+        if not self.api_key or (isinstance(self.api_key, str) and not self.api_key.strip()):
+            return False
+        
+        # Also check the actual request URL to catch cases where empty apikey was passed
+        # This handles the case: GET ...?apikey=&...
+        try:
+            from urllib.parse import urlparse, parse_qsl
+            request_url = str(response.request.url) if hasattr(response, 'request') and hasattr(response.request, 'url') else str(response.url)
+            parsed_url = urlparse(request_url)
+            query_params = dict(parse_qsl(parsed_url.query))
+            apikey_in_url = query_params.get('apikey', '')
+            # If apikey is in URL but empty, it's invalid
+            if apikey_in_url == '':
+                return False
+        except Exception:
+            # If we can't parse URL, fall back to self.api_key check
+            pass
+        
+        return True
 
     def _log_and_check_limits(self, response, skip_counter=False):
         """Request logging and limit checking.
@@ -214,9 +244,11 @@ class _YaraspClientBase:
         # If from_cache is True, it's from cache, so don't count it
         # skip_counter is used internally to track pagination requests separately
         # Also skip if we're in pagination mode (counter will be handled in _get_paginated_results)
+        # Only increment counter if request has a valid (non-empty) API key
         if not skip_counter and not self._in_pagination and self.last_response_from_cache is False:
-            self._check_daily_limit()
-            self._increment_usage()
+            if self._has_valid_apikey(response):
+                self._check_daily_limit()
+                self._increment_usage()
 
     # async def _parse_json_response(self, response, async_mode):
     #     """JSON response handler for synchronous and asynchronous modes."""
@@ -306,8 +338,8 @@ class _YaraspClientBase:
                 else:
                     aggregated.append(page_data)
 
-            # Only increment counter once if any request was real
-            if any_real_request:
+            # Only increment counter once if any request was real and has valid API key
+            if any_real_request and self.api_key and (isinstance(self.api_key, str) and self.api_key.strip()):
                 self._check_daily_limit()
                 self._increment_usage()
             # Set last_response_from_cache based on whether all were from cache
@@ -352,8 +384,8 @@ class _YaraspClientBase:
                 else:
                     aggregated.append(page_data)
 
-            # Only increment counter once if any request was real
-            if any_real_request:
+            # Only increment counter once if any request was real and has valid API key
+            if any_real_request and self.api_key and (isinstance(self.api_key, str) and self.api_key.strip()):
                 self._check_daily_limit()
                 self._increment_usage()
             # Set last_response_from_cache based on whether all were from cache
