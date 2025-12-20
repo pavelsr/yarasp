@@ -17,6 +17,8 @@ Example usage:
 
     # If YARASP_API_KEY is not set, the script will prompt for it
     python scripts/gen_fixtures.py
+    # or use
+    uv run --env-file .env scripts/gen_fixtures.py
 """
 
 # If you get "httpx.ReadTimeout: The read operation timed out" error try to set HTTPX_TIMEOUT=30 env variable and enable/disable VPN.

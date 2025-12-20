@@ -3,28 +3,28 @@
         "status": 200,
         "headers": [
             [
-                "Vary",
-                "Accept, Accept-Encoding"
+                "X-Content-Type-Options",
+                "nosniff"
+            ],
+            [
+                "Content-Type",
+                "application/json; charset=utf-8"
             ],
             [
                 "Content-Encoding",
                 "gzip"
             ],
             [
-                "X-Content-Type-Options",
-                "nosniff"
+                "Vary",
+                "Accept, Accept-Encoding"
             ],
             [
                 "Date",
-                "Sun, 14 Dec 2025 18:51:56 GMT"
+                "Sat, 20 Dec 2025 18:52:31 GMT"
             ],
             [
                 "Content-Length",
                 "338"
-            ],
-            [
-                "Content-Type",
-                "application/json; charset=utf-8"
             ],
             [
                 "Allow",
@@ -73,7 +73,7 @@
     },
     "metadata": {
         "cache_key": "1bba9cc23ec176e4737b2611f215ab4c",
-        "number_of_uses": 30,
-        "created_at": "Sun, 14 Dec 2025 18:51:56 GMT"
+        "number_of_uses": 0,
+        "created_at": "Sat, 20 Dec 2025 18:52:31 GMT"
     }
 }

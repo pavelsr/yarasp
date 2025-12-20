@@ -5,6 +5,8 @@ All requests in this test must be taken from cache.
 Fixtures are generated using scripts/gen_fixtures.py.
 """
 
+from pathlib import Path
+
 import pytest
 
 from yarasp import YaraspClient
@@ -18,6 +20,30 @@ from scripts.fixture_requests import (
     NEAREST_SETTLEMENT_REQUEST,
     CARRIER_REQUEST,
     COPYRIGHT_REQUEST,
+)
+
+# Get cache directory path relative to this test file
+CACHE_DIR = Path(__file__).parent / ".cache" / "hishel"
+
+
+def _cache_dir_exists_and_not_empty() -> bool:
+    """Check if cache directory exists and is not empty."""
+    if not CACHE_DIR.exists() or not CACHE_DIR.is_dir():
+        return False
+    try:
+        # Check if directory has any files (excluding .gitignore and other hidden files)
+        # Only count actual cache files
+        for item in CACHE_DIR.iterdir():
+            if not item.name.startswith("."):
+                return True
+        return False
+    except OSError:
+        return False
+
+
+pytestmark = pytest.mark.skipif(
+    not _cache_dir_exists_and_not_empty(),
+    reason="Cache directory tests/.cache/hishel does not exist or is empty",
 )
 
 client = YaraspClient(cache_storage=hishel.FileStorage(base_path="tests/.cache/hishel"))
