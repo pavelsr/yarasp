@@ -154,6 +154,7 @@ cython_debug/
 *.sqlite
 *.sqlite3
 yarasp_counter.json
+yarasp_counter.db
 .hishel.sqlite
 
 # Large test fixtures (stored in S3)

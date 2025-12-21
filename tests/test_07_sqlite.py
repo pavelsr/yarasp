@@ -25,6 +25,9 @@ If YARASP_API_KEY is not set, all tests will be skipped.
 NOTE: This test uses SQLite database files that are created in the tests directory.
 Test databases are cleaned up after tests complete (unless YARASP_SQLITE_NO_FLUSH is set).
 
+By default, uses separate databases for cache and counter. Use @pytest.mark.shared_db
+to use a single database for both cache and counter (sqlite_db_path=sqlite_cache_db_path).
+
 When running with -v (verbose) flag, test will log paths to SQLite databases:
 - sqlite_db_path: path to counter database
 - sqlite_cache_db_path: path to cache database
@@ -59,6 +62,12 @@ Running tests:
 
     # Run with verbose output to see database paths (use -v -s to see paths)
     uv run pytest tests/test_07_sqlite.py -v -s
+
+    # Run test with shared database (single DB for cache and counter)
+    uv run pytest tests/test_07_sqlite.py -m shared_db
+
+    # For manual debug and future testing compatibility with hishel >= 1.0
+    YARASP_SQLITE_NO_FLUSH=1 uv run pytest tests/test_07_sqlite.py -m shared_db -v -s
 """
 
 import os
@@ -120,9 +129,20 @@ def client(sqlite_db_path, sqlite_cache_db_path, request):
     This test verifies both caching functionality and API usage counter through SQLite.
     Uses separate database for cache to avoid conflicts between tests.
     
+    Supports @pytest.mark.shared_db to use single database for both cache and counter.
+    
     When running with -v (verbose) flag, logs paths to SQLite databases.
     """
     import sqlite3
+    
+    # Check if shared_db marker is set
+    shared_db = request.node.get_closest_marker("shared_db") is not None
+    
+    # Use same database for cache and counter if shared_db marker is set
+    if shared_db:
+        cache_db_path = sqlite_db_path
+    else:
+        cache_db_path = sqlite_cache_db_path
     
     # Log database paths if verbose mode is enabled
     # Check if -v or -vv flag is used
@@ -130,10 +150,13 @@ def client(sqlite_db_path, sqlite_cache_db_path, request):
     if verbose > 0:
         # Print database paths (visible with -v -s flags)
         print(f"\n[SQLite Test] Counter database path: {sqlite_db_path}")
-        print(f"[SQLite Test] Cache database path: {sqlite_cache_db_path}")
+        if shared_db:
+            print(f"[SQLite Test] Cache database path: {sqlite_db_path} (shared with counter)")
+        else:
+            print(f"[SQLite Test] Cache database path: {sqlite_cache_db_path}")
     
-    # Create SQLiteStorage with separate database for cache
-    cache_conn = sqlite3.connect(sqlite_cache_db_path)
+    # Create SQLiteStorage with database for cache
+    cache_conn = sqlite3.connect(cache_db_path)
     storage = hishel.SQLiteStorage(connection=cache_conn)
     return YaraspClient(
         cache_storage=storage, counter_backend="sqlite", counter_storage_path=sqlite_db_path
@@ -141,20 +164,25 @@ def client(sqlite_db_path, sqlite_cache_db_path, request):
 
 
 @pytest.fixture(autouse=True)
-def cleanup_sqlite_db(sqlite_db_path, sqlite_cache_db_path):
+def cleanup_sqlite_db(sqlite_db_path, sqlite_cache_db_path, request):
     """
     Clean up SQLite databases before and after each test.
     
     Respects YARASP_SQLITE_NO_FLUSH environment variable to preserve database state.
+    Handles shared_db marker - if set, only cleans sqlite_db_path (cache uses same DB).
     """
     # Check if flush should be disabled
     no_flush = os.environ.get("YARASP_SQLITE_NO_FLUSH", "").lower() in ("1", "true", "yes")
+    
+    # Check if shared_db marker is set
+    shared_db = request.node.get_closest_marker("shared_db") is not None
     
     # Clean databases before test
     if not no_flush:
         if os.path.exists(sqlite_db_path):
             os.remove(sqlite_db_path)
-        if os.path.exists(sqlite_cache_db_path):
+        # Only clean cache DB if not using shared database
+        if not shared_db and os.path.exists(sqlite_cache_db_path):
             os.remove(sqlite_cache_db_path)
     
     yield
@@ -163,7 +191,8 @@ def cleanup_sqlite_db(sqlite_db_path, sqlite_cache_db_path):
     if not no_flush:
         if os.path.exists(sqlite_db_path):
             os.remove(sqlite_db_path)
-        if os.path.exists(sqlite_cache_db_path):
+        # Only clean cache DB if not using shared database
+        if not shared_db and os.path.exists(sqlite_cache_db_path):
             os.remove(sqlite_cache_db_path)
 
 
@@ -400,6 +429,7 @@ def test_sqlite_cache_copyright(client):
 
 
 @pytest.mark.carrier
+@pytest.mark.shared_db
 def test_apikey_counter_sqlite(client, sqlite_db_path):
     """
     Test that API usage counter correctly stores usage data in SQLite database.

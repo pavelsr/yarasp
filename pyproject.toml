@@ -63,6 +63,7 @@ markers = [
     "carrier: marks test for carrier endpoint",
     "all_endpoints: marks test for all endpoints (use -m all_endpoints to run)",
     "all: marks test for all endpoints (use -m all to run)",
+    "shared_db: use single database for both cache and counter (sqlite_db_path=sqlite_cache_db_path)",
 ]
 
 [dependency-groups]

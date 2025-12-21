@@ -9,6 +9,7 @@ Module capabilities:
 - Safe mode (enabled by default): execution terminates when daily request limit is exceeded.
 - Automatic pagination handling – with auto_paginate=True the client aggregates data from all pages.
 - Ability to force "live" data requests (force_live=True) even if cache exists.
+- Cache-only mode (cache_only=True): only return data from cache, raise CacheMissError if not cached.
 - The is_from_cache method allows checking if the last response came from cache.
 
 Before use, the module requires the environment variable:
@@ -27,6 +28,13 @@ import httpx
 import logging
 from typing import Any, Optional, Set
 from dataclasses import dataclass, field
+
+
+class CacheMissError(Exception):
+    """Raised when cache_only=True and requested data is not in cache."""
+
+    pass
+
 
 from .utils import (
     JSONUsageCounter,
@@ -68,6 +76,7 @@ class _YaraspClientBase:
     redis_client: Optional[Any] = None
     user_agent: str = "httpx"
     cache_enabled: bool = True
+    cache_only: bool = False
     cache_storage: Optional["CacheStorageType"] = None
     last_response_from_cache: bool = field(init=False, default=None)
     api_key: str = field(
@@ -139,10 +148,9 @@ class _YaraspClientBase:
                 elif isinstance(actual_storage, hishel.SQLiteStorage):
                     use_sqlite_counter = True
                     # Use counter_storage_path if it's a .db or .sqlite file, otherwise use default
-                    if (
-                        self.counter_storage_path.endswith(".db")
-                        or self.counter_storage_path.endswith(".sqlite")
-                    ):
+                    if self.counter_storage_path.endswith(
+                        ".db"
+                    ) or self.counter_storage_path.endswith(".sqlite"):
                         sqlite_db_path = self.counter_storage_path
                     else:
                         sqlite_db_path = "yarasp_counter.db"
@@ -281,6 +289,126 @@ class _YaraspClientBase:
 
     def _build_url(self, endpoint):
         return f"{self.base_url}/{endpoint.lstrip('/').rstrip('/')}/"
+
+    def _generate_cache_key(self, url, params):
+        """
+        Generate cache key for given URL and params.
+
+        Args:
+            url: Request URL
+            params: Request parameters
+
+        Returns:
+            str: Cache key
+        """
+        import hishel
+        import httpcore
+        from urllib.parse import urlencode
+
+        # Build URL with params (excluding apikey)
+        clean_params = {k: v for k, v in params.items() if k.lower() != "apikey"}
+        query_string = urlencode(clean_params) if clean_params else ""
+        full_url = f"{url}?{query_string}" if query_string else url
+
+        # Create request object
+        request = httpcore.Request(
+            method="GET",
+            url=full_url,
+            headers={},
+        )
+
+        # Generate cache key using the same logic as custom_key_generator
+        if isinstance(request.method, bytes):
+            method = request.method.decode()
+        else:
+            method = request.method
+
+        if method == "GET":
+            from urllib.parse import urlparse, parse_qsl, urlencode, urlunparse
+
+            parsed_url = urlparse(str(request.url))
+            query_params = [
+                (k, v) for k, v in parse_qsl(parsed_url.query) if k.lower() != "apikey"
+            ]
+            new_query = urlencode(query_params)
+            new_url = urlunparse(
+                (
+                    parsed_url.scheme,
+                    parsed_url.netloc,
+                    parsed_url.path,
+                    parsed_url.params,
+                    new_query,
+                    parsed_url.fragment,
+                )
+            )
+
+            request = httpcore.Request(
+                method=request.method,
+                url=new_url,
+                headers=request.headers,
+                content=request.stream,
+                extensions=request.extensions,
+            )
+        cache_key = hishel._utils.generate_key(request, b"")
+        return cache_key
+
+    def _check_cache_exists(self, url, params):
+        """
+        Check if data exists in cache for given URL and params.
+
+        Args:
+            url: Request URL
+            params: Request parameters
+
+        Returns:
+            bool: True if data exists in cache, False otherwise
+        """
+        if not self.cache_enabled or self.cache_storage is None:
+            return False
+
+        try:
+            cache_key = self._generate_cache_key(url, params)
+
+            # Check if data exists in cache
+            # For wrapped storage, need to access _wrapped_storage
+            storage = self.cache_storage
+            if hasattr(self.cache_storage, "_wrapped_storage"):
+                storage = self.cache_storage._wrapped_storage
+
+            cached_response = storage.retrieve(cache_key)
+            return cached_response is not None
+        except Exception:
+            # If any error occurs, assume cache doesn't exist
+            return False
+
+    async def _check_cache_exists_async(self, url, params):
+        """
+        Check if data exists in cache for given URL and params (async version).
+
+        Args:
+            url: Request URL
+            params: Request parameters
+
+        Returns:
+            bool: True if data exists in cache, False otherwise
+        """
+        if not self.cache_enabled or self.cache_storage is None:
+            return False
+
+        try:
+            cache_key = self._generate_cache_key(url, params)
+
+            # Check if data exists in cache
+            # For wrapped storage, need to access _wrapped_storage
+            storage = self.cache_storage
+            if hasattr(self.cache_storage, "_wrapped_storage"):
+                storage = self.cache_storage._wrapped_storage
+
+            cached_response = await storage.retrieve(cache_key)
+            return cached_response is not None
+        except Exception:
+            # If any error occurs, assume cache doesn't exist
+            return False
 
     def _log_response_verbose(self, response):
         """Logs HTTP response with extended information."""
@@ -586,6 +714,15 @@ class YaraspClient(_YaraspClientBase):
                 url, params=p, extensions={"force_cache": True}
             )
             self._log_and_check_limits(response)
+
+            # If cache_only is enabled, verify response came from cache
+            # This check happens after the request, so we can rely on last_response_from_cache
+            if self.cache_only and not self.last_response_from_cache:
+                raise CacheMissError(
+                    f"Data not found in cache for endpoint '{endpoint}'. "
+                    "Set cache_only=False to allow API requests."
+                )
+
             return self._parse_json_response_sync(response)
 
         if auto_paginate:
@@ -613,6 +750,15 @@ class AsyncYaraspClient(_YaraspClientBase):
                 url, params=p, extensions={"force_cache": True}
             )
             self._log_and_check_limits(response)
+
+            # If cache_only is enabled, verify response came from cache
+            # This check happens after the request, so we can rely on last_response_from_cache
+            if self.cache_only and not self.last_response_from_cache:
+                raise CacheMissError(
+                    f"Data not found in cache for endpoint '{endpoint}'. "
+                    "Set cache_only=False to allow API requests."
+                )
+
             return await self._parse_json_response_async(response)
 
         if auto_paginate:

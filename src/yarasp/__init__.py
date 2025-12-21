@@ -10,4 +10,5 @@ from .yarasp import (
     JSONUsageCounter,
     RedisUsageCounter,
     SQLiteUsageCounter,
+    CacheMissError,
 )

@@ -14,6 +14,7 @@ Python client library for the [Yandex Schedule API](https://yandex.ru/dev/rasp/d
 - ✅ **Safe mode** (enabled by default) - prevents exceeding daily API limits
 - ✅ **Automatic pagination** - aggregates data from all pages with `auto_paginate=True`
 - ✅ **Force live requests** - bypass cache with `force_live=True`
+- ✅ **Cache-only mode** - only return data from cache, raise `CacheMissError` if not cached
 - ✅ **Multiple cache backends** - FileStorage (default), SQLiteStorage, RedisStorage
 - ✅ **Type hints** - full type support for better IDE experience
 
@@ -21,7 +22,7 @@ Python client library for the [Yandex Schedule API](https://yandex.ru/dev/rasp/d
 
 ```bash
 pip install yarasp
-```
+
 
 Or using `uv`:
 
@@ -106,6 +107,23 @@ else:
     print("Live API request")
 ```
 
+### Cache-Only Mode
+
+Use `cache_only=True` to ensure you only get data from cache. This is useful when you want to avoid making API requests and only work with previously cached data:
+
+```python
+from yarasp import YaraspClient, CacheMissError
+
+client = YaraspClient(cache_only=True)
+
+try:
+    # This will only return data if it's in cache
+    result = client.search(query="Москва")
+    print("Got cached data")
+except CacheMissError:
+    print("Data not in cache - need to fetch it first with cache_only=False")
+```
+
 ## Configuration
 
 ### Environment Variables
@@ -119,11 +137,12 @@ else:
 ```python
 client = YaraspClient(
     cache_enabled=True,           # Enable/disable caching
+    cache_only=False,             # Only use cache (raises CacheMissError if not cached)
     safe_mode=True,              # Enable safe mode (raises error on limit exceed)
     daily_limit=500,             # Daily API request limit
     verbose=False,               # Enable verbose logging
-    counter_backend="json",      # Usage counter backend: "json" or "redis"
-    counter_storage_path="yarasp_counter.json"  # Path for JSON counter
+    counter_backend="json",      # Usage counter backend: "json", "redis", or "sqlite"
+    counter_storage_path="yarasp_counter.json"  # Path for counter storage
 )
 ```
 
@@ -155,7 +174,7 @@ MIT License
 ## Links
 
 - **Yandex Schedule**: https://rasp.yandex.ru/
+- **Module Documentation**: https://pavelsr.github.io/yarasp/
 - **API Documentation**: https://yandex.ru/dev/rasp/doc/
 - **GitHub Repository**: https://github.com/pavelsr/yarasp
 - **Issue Tracker**: https://github.com/pavelsr/yarasp/issues
-
