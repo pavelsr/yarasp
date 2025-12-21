@@ -174,7 +174,7 @@ MIT License
 ## Links
 
 - **Yandex Schedule**: https://rasp.yandex.ru/
-- **Module Documentation**: https://pavelsr.github.io/yarasp/
+- **Module Documentation**: https://pavelsr.github.io/yarasp/, https://yarasp.readthedocs.io/en/latest/
 - **API Documentation**: https://yandex.ru/dev/rasp/doc/
 - **GitHub Repository**: https://github.com/pavelsr/yarasp
 - **Issue Tracker**: https://github.com/pavelsr/yarasp/issues
