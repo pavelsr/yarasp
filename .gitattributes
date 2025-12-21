@@ -1,0 +1,4 @@
+# Hide diff for cache files (they only change number_of_uses)
+# This prevents git diff from showing changes in cache files
+tests/.cache/hishel/** -diff
+

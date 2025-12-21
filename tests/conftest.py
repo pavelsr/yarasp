@@ -34,6 +34,32 @@ def pytest_collection_modifyitems(config, items):
         for item in items:
             if "large_fixture" in item.keywords:
                 item.add_marker(skip_large_fixture)
+    
+    # For test_07_sqlite.py: by default run only stations_list, schedule, carrier tests
+    # unless all_endpoints or all marker is explicitly requested
+    markerexpr = config.getoption("-m", default=None)
+    request_all_endpoints = markerexpr and ("all_endpoints" in markerexpr or markerexpr == "all")
+    
+    if not request_all_endpoints:
+        # Filter test_07_sqlite tests to run only default ones by default
+        for item in items:
+            # Check if this is a test from test_07_sqlite.py
+            # Use nodeid which contains the full path like "tests/test_07_sqlite.py::test_name"
+            if hasattr(item, 'nodeid') and "test_07_sqlite" in item.nodeid:
+                # Skip tests that have all_endpoints/all marker but not stations_list/schedule/carrier
+                has_all_marker = "all_endpoints" in item.keywords or "all" in item.keywords
+                has_default_marker = (
+                    "stations_list" in item.keywords
+                    or "schedule" in item.keywords
+                    or "carrier" in item.keywords
+                )
+                # If test has all_endpoints/all marker but no default marker, skip it
+                if has_all_marker and not has_default_marker:
+                    item.add_marker(
+                        pytest.mark.skip(
+                            reason="Run with -m all_endpoints or -m all to test all endpoints"
+                        )
+                    )
 
 
 def ensure_stations_list_fixture():

@@ -10,7 +10,7 @@ def test_yarasp_client_sync_cached_defaults():
     assert isinstance(client.verbose, bool)
     assert isinstance(client.safe_mode, bool)
     assert isinstance(client.daily_limit, int)
-    assert client.counter_backend in {"json", "redis"}
+    assert client.counter_backend in {"json", "redis", "sqlite"}
     assert client.counter_storage_path == "yarasp_counter.json"
     assert client.redis_client is None
     assert client.user_agent == "httpx" # hishel.CacheClient
@@ -29,7 +29,7 @@ def test_yarasp_client_sync_nocached_defaults():
     assert isinstance(client.verbose, bool)
     assert isinstance(client.safe_mode, bool)
     assert isinstance(client.daily_limit, int)
-    assert client.counter_backend in {"json", "redis"}
+    assert client.counter_backend in {"json", "redis", "sqlite"}
     assert client.counter_storage_path == "yarasp_counter.json"
     assert client.redis_client is None
     assert client.user_agent == "httpx"
@@ -51,7 +51,7 @@ def test_yarasp_client_async_cached_defaults():
     assert isinstance(client.verbose, bool)
     assert isinstance(client.safe_mode, bool)
     assert isinstance(client.daily_limit, int)
-    assert client.counter_backend in {"json", "redis"}
+    assert client.counter_backend in {"json", "redis", "sqlite"}
     assert client.counter_storage_path == "yarasp_counter.json"
     assert client.redis_client is None
     assert client.user_agent == "httpx" # hishel.CacheClient
@@ -70,7 +70,7 @@ def test_yarasp_client_async_nocached_defaults():
     assert isinstance(client.verbose, bool)
     assert isinstance(client.safe_mode, bool)
     assert isinstance(client.daily_limit, int)
-    assert client.counter_backend in {"json", "redis"}
+    assert client.counter_backend in {"json", "redis", "sqlite"}
     assert client.counter_storage_path == "yarasp_counter.json"
     assert client.redis_client is None
     assert client.user_agent == "httpx"

@@ -61,6 +61,8 @@ markers = [
     "stations_list: marks test for stations_list endpoint",
     "schedule: marks test for schedule endpoint",
     "carrier: marks test for carrier endpoint",
+    "all_endpoints: marks test for all endpoints (use -m all_endpoints to run)",
+    "all: marks test for all endpoints (use -m all to run)",
 ]
 
 [dependency-groups]
@@ -72,6 +74,7 @@ dev = [
     "mypy",
     "pytest",
     "pytest-httpx>=0.35.0",
+    "python-dotenv",
     "redis>=7.0.1",
     "ruff",
 ]

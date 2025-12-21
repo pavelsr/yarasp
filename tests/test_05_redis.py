@@ -50,24 +50,12 @@ Running tests:
 import os
 from pathlib import Path
 import pytest
+from dotenv import load_dotenv
 
 # Load .env file BEFORE importing yarasp to ensure YARASP_API_KEY is available
-def _load_env_file():
-    """Load environment variables from .env file if it exists."""
-    env_file = Path(__file__).parent.parent / ".env"
-    if env_file.exists():
-        with open(env_file, "r") as f:
-            for line in f:
-                line = line.strip()
-                if line and not line.startswith("#") and "=" in line:
-                    key, value = line.split("=", 1)
-                    key = key.strip()
-                    value = value.strip().strip('"').strip("'")
-                    if key and value:
-                        os.environ.setdefault(key, value)
-
-# Load .env file early
-_load_env_file()
+# Load .env file from project root
+env_file = Path(__file__).parent.parent / ".env"
+load_dotenv(env_file, override=False)
 
 from yarasp import YaraspClient
 import hishel
