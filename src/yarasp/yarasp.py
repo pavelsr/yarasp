@@ -267,6 +267,7 @@ class _YaraspClientBase:
                     306,
                     307,
                     308,
+                    404
                 ],
             )
             client_cls = hishel.AsyncCacheClient if async_mode else hishel.CacheClient
