@@ -733,6 +733,26 @@ class YaraspClient(_YaraspClientBase):
 
         return get_page(params)
 
+    def has_cache(self, endpoint: str, params: Optional[dict] = None) -> bool:
+        """
+        Check if data exists in cache for given endpoint and params.
+
+        This method generates a cache key using the same logic as the API request
+        (modified hishel._utils.generate_key with apikey excluded) and checks if
+        the key exists in cache storage. The method does not retrieve or inspect
+        cache contents, only checks for key existence.
+
+        Args:
+            endpoint: API endpoint name (e.g., 'search', 'schedule', 'thread')
+            params: Request parameters (without apikey, it will be added automatically)
+
+        Returns:
+            bool: True if cache entry exists, False otherwise
+        """
+        params = self._prepare_params(params)
+        url = self._build_url(endpoint)
+        return self._check_cache_exists(url, params)
+
 
 ###############################################################################
 # Asynchronous client
@@ -768,6 +788,26 @@ class AsyncYaraspClient(_YaraspClientBase):
             )
 
         return await get_page(params)
+
+    async def has_cache(self, endpoint: str, params: Optional[dict] = None) -> bool:
+        """
+        Check if data exists in cache for given endpoint and params (async version).
+
+        This method generates a cache key using the same logic as the API request
+        (modified hishel._utils.generate_key with apikey excluded) and checks if
+        the key exists in cache storage. The method does not retrieve or inspect
+        cache contents, only checks for key existence.
+
+        Args:
+            endpoint: API endpoint name (e.g., 'search', 'schedule', 'thread')
+            params: Request parameters (without apikey, it will be added automatically)
+
+        Returns:
+            bool: True if cache entry exists, False otherwise
+        """
+        params = self._prepare_params(params)
+        url = self._build_url(endpoint)
+        return await self._check_cache_exists_async(url, params)
 
 
 YaraspClient._create_wrapped_methods()
