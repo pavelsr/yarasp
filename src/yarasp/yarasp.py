@@ -693,9 +693,12 @@ class _YaraspClientBase:
                 name,
                 lambda self,
                 params=None,
+                force_live=False,
                 ep=name,
                 ap=auto_paginate,
-                rk=result_key: self.get(ep, params, auto_paginate=ap, result_key=rk),
+                rk=result_key: self.get(
+                    ep, params, auto_paginate=ap, result_key=rk, force_live=force_live
+                ),
             )
 
 
@@ -706,14 +709,24 @@ class YaraspClient(_YaraspClientBase):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-    def get(self, endpoint, params=None, auto_paginate=False, result_key=None):
+    def get(
+        self, endpoint, params=None, auto_paginate=False, result_key=None, force_live=False
+    ):
+        # Validate conflicting options
+        if force_live and self.cache_only:
+            raise ValueError("Cannot use force_live=True with cache_only=True")
+
         params = self._prepare_params(params)
         url = self._build_url(endpoint)
 
         def get_page(p):
-            response = self.http_client.get(
-                url, params=p, extensions={"force_cache": True}
-            )
+            # Build request kwargs
+            request_kwargs = {"params": p, "extensions": {"force_cache": True}}
+            if force_live:
+                # Add Cache-Control: no-cache header to bypass cache lookup
+                request_kwargs["headers"] = {"Cache-Control": "no-cache"}
+
+            response = self.http_client.get(url, **request_kwargs)
             self._log_and_check_limits(response)
 
             # If cache_only is enabled, verify response came from cache
@@ -762,14 +775,24 @@ class AsyncYaraspClient(_YaraspClientBase):
         super().__init__(**kwargs)
         self._init_http_client(async_mode=True)
 
-    async def get(self, endpoint, params=None, auto_paginate=False, result_key=None):
+    async def get(
+        self, endpoint, params=None, auto_paginate=False, result_key=None, force_live=False
+    ):
+        # Validate conflicting options
+        if force_live and self.cache_only:
+            raise ValueError("Cannot use force_live=True with cache_only=True")
+
         params = self._prepare_params(params)
         url = self._build_url(endpoint)
 
         async def get_page(p):
-            response = await self.http_client.get(
-                url, params=p, extensions={"force_cache": True}
-            )
+            # Build request kwargs
+            request_kwargs = {"params": p, "extensions": {"force_cache": True}}
+            if force_live:
+                # Add Cache-Control: no-cache header to bypass cache lookup
+                request_kwargs["headers"] = {"Cache-Control": "no-cache"}
+
+            response = await self.http_client.get(url, **request_kwargs)
             self._log_and_check_limits(response)
 
             # If cache_only is enabled, verify response came from cache
